@@ -1,2 +1,30 @@
-body {background: grey;}
-// Начните писать стили здесь
+@import "page-header/_page-header.less";
+@import "main-nav/_main-nav.less";
+@import "download/_download.less";
+@import "advantages/_advantages.less";
+@import "contacts/_contacts.less";
+@import "news/_news.less";
+@import "price/_price.less";
+@import "reviews/_reviews.less";
+@import "page-footer/_page-footer.less";
+
+body {
+  width: 320px;
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #ffffff;
+  background-image: url("../img/town.png");
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.page-header__logo {
+  padding-left: 20px;
+}
+
+.site-list {
+  list-style: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
