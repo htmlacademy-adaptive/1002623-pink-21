@@ -1,0 +1,205 @@
+.page-header {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.main-nav {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+.site-list__item a {
+  text-decoration: none;
+}
+.download {
+  background-color: #1d2631;
+}
+.download__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+}
+.download__list {
+  text-align: center;
+  padding: 0;
+}
+.download__soft {
+  width: 280px;
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  line-height: 55px;
+  text-align: center;
+  margin: auto;
+}
+.download__soft__button {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+.download__legend {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.advantages {
+  text-align: center;
+  background-color: #F2F2F2;
+}
+.advantages__slogan {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  background-color: #ffffff;
+}
+.advantages__list {
+  padding: 0;
+}
+.advantages__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.advantages__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283645;
+}
+.contacts {
+  text-align: center;
+}
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #283645;
+}
+.contacts__phone,
+.contacts__email,
+.contacts__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  color: #D22856;
+  text-decoration: none;
+}
+.contacts__phone-number,
+.contacts__email-post,
+.contacts__text-adress {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #283645;
+}
+.news {
+  display: none;
+}
+.price {
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+.price__item {
+  background-color: #ffffff;
+}
+.price__item:first-of-type {
+  display: none;
+}
+.price__item:last-of-type {
+  display: none;
+}
+.price__name {
+  background-color: #283645;
+}
+.price__name--hit {
+  text-align: right;
+}
+.price__name--packet {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+.price__name--usd {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.price__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.price__wrapper p {
+  text-align: center;
+}
+.reviews__wrapper {
+  text-align: center;
+}
+.reviews__author-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.reviews__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.reviews__author-old {
+  display: none;
+}
+.reviews__toggle {
+  text-align: center;
+}
+.reviews__prev,
+.reviews__next,
+.reviews__image {
+  display: none;
+}
+.page-footer {
+  text-align: center;
+}
+.page-footer__social {
+  margin-top: 40px;
+}
+.social__list {
+  padding: 0;
+}
+.copyright__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #283645;
+}
+.copyright__link {
+  text-decoration: none;
+}
+body {
+  width: 320px;
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #ffffff;
+  background-image: url("../img/town.png");
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.page-header__logo {
+  padding-left: 20px;
+}
+.site-list {
+  list-style: none;
+}
+.visually-hidden {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
