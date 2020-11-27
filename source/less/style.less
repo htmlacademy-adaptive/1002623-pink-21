@@ -1,1 +1,31 @@
-// Начните писать стили здесь
+@import "block/_page-header.less";
+@import "block/_main-nav.less";
+@import "block/_download.less";
+@import "block/_advantages.less";
+@import "block/_contacts.less";
+@import "block/_news.less";
+@import "block/_price.less";
+@import "block/_reviews.less";
+@import "block/_page-footer.less";
+@import "block/_site-list.less";
+
+body {
+  width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background: #ffffff;
+  background-image: url("../img/town.png");
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.page-header__logo {
+  padding-left: 20px;
+}
+
+.site-list {
+  list-style: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
