@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Пинк</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">  </head>
 
   </head>
   <body class="page__body">
@@ -45,122 +47,136 @@
       <h1 class="visually-hidden">Каталог фотографий</h1>
       <section class="intro">
         <div class="intro__wrapper">
-          <p class="intro_slogon">Фотографии</br>пользователей
+          <p class="intro__slogan">Фотографии</br>пользователей
           </p>
-          <p class="intro_text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          <p class="intro__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
         </div>
       </section>
-      <section class="foto-day">
-        <div class="foto-day__wrapper">
-          <div class="foto-day__labal">Панорама дня</div>
-          <img  class="foto-day" src="https://via.placeholder.com/150x150" width="320" height="137" alt="Панорама дня">
-          <div class="foto-day__caption">
-            <p class="foto__caption--name-time">Анна <span class="time-ago">(5 минут назад)</span></p>
+      <section class="foto">
+        <div class="foto__wrapper">
+
+        <div class="foto__labal">Панорама дня</div>
+          <div class="foto__post">
+          <img  class="foto__panorama" src="img/panorama-tablet.jpg" width="320" height="137" alt="Панорама дня">
+
+          <div class="foto__caption">
+            <p class="foto__autor">Анна <span class="foto__time-ago">(5 минут назад)</span></p>
             <p class="foto__message">Прыгать или нет? Напишите в</br>комментарии свой совет и</br>смотрите прямую трансляцию в</br>перископе, задавайте свои вопросы!</p>
-            <button class="hart" type="button"><span class="visually-hidden">Лайк</span></button>
-            <p class="hart-count">Нравится: 215</p>
+            <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
+            <p class="foto__hart-count">Нравится: 215</p>
           </div>
-        </div>
-      </section>
-      <section class="foto-catalog">
-        <div class="foto-catalog__wrapper">
-          <div class="post">
-            <img  class="foto" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото автомобиля">
+          </div>
+
+          <div class="foto__post">
+            <img  class="foto__img" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фото автомобиля">
             <div class="foto__caption">
-              <p class="foto__caption--name-time">Левон <span class="time-ago">(5 часов назад)</span></p>
+              <p class="foto__autor">Левон <span class="foto__time-ago">(5 часов назад)</span></p>
               <p class="foto__message">Вчера он на луну летал, сегодня</br>в руки к нам попал.
               </p>
-              <button class="hart" type="button"><span class="visually-hidden">Лайк</span></button>
-              <p class="hart-count">Нравится: 356</p>
+              <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
+              <p class="foto__hart-count">Нравится: 356</p>
             </div>
           </div>
-          <div class="post">
-            <img  class="foto" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото барабана">
+
+          <div class="foto__post">
+            <img  class="foto__img" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Фото барабана">
             <div class="foto__caption">
-              <p class="foto__caption--name-time">Антон <span class="time-ago">(12 часов назад)</span></p>
-              <p class="foto__message">Соседи будут рады!
-              </p>
-              <button class="hart" type="button"><span class="visually-hidden">Лайк</span></button>
-              <p class="hart-count">Нравится: 666</p>
+              <p class="foto__autor">Антон <span class="foto__time-ago">(12 часов назад)</span></p>
+              <p class="foto__message">Соседи будут рады!</p>
+              <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
+              <p class="foto__hart-count">Нравится: 666</p>
             </div>
           </div>
-          <div class="post">
-            <img  class="foto" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото барабана">
+
+          <div class="foto__post">
+            <img  class="foto" src="img/photo-3-tablet.jpg" width="280" height="180" alt="Фото барабана">
             <div class="foto__caption">
-              <p class="foto__caption--name-time">Борис <span class="time-ago">(20 часов назад)</span></p>
+              <p class="foto__autor">Борис <span class="foto__time-ago">(20 часов назад)</span></p>
               <p class="foto__message">Здесь могла быть ваша цитата о</br>высоком и вечном.
               </p>
-              <button class="hart" type="button"><span class="visually-hidden">Лайк</span></button>
-              <p class="hart-count">Нравится: 215</p>
+              <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
+              <p class="foto__hart-count">Нравится: 215</p>
             </div>
           </div>
-          <div class="post">
-            <img  class="foto" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото оранжевого шарта">
+          <div class="foto__post">
+            <img  class="foto" src="img/photo-4-tablet.jpg" width="280" height="180" alt="Фото оранжевого шарта">
             <div class="foto__caption">
-              <p class="foto__caption--name-time">Сергей <span class="time-ago">(25 часов назад)</span></p>
+              <p class="foto__autor">Сергей <span class="foto__time-ago">(25 часов назад)</span></p>
               <p class="foto__message">Где снег-то?
               </p>
-              <button class="hart" type="button"><span class="visually-hidden">Лайк</span></button>
-              <p class="hart-count">Нравится: 150</p>
+              <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
+              <p class="foto__hart-count">Нравится: 150</p>
             </div>
           </div>
-          <div class="post">
-            <img  class="foto" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото солца над крылом самолёта">
+          <div class="foto__post">
+            <img  class="foto" src="img/photo-5-tablet.jpg" width="280" height="180" alt="Фото солца над крылом самолёта">
             <div class="foto__caption">
-              <p class="foto__caption--name-time">Надежда <span class="time-ago">(45 часов назад)</span></p>
+              <p class="foto__autor">Максим <span class="foto__time-ago">(40 часов назад)</span></p>
+              <p class="foto__message">Где снег-то?
+              </p>
+              <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
+              <p class="foto__hart-count">Нравится: 150</p>
+            </div>
+          </div>
+
+          <div class="foto__post">
+            <img  class="foto" src="img/photo-6-tablet.jpg" width="280" height="180" alt="Фото солца над крылом самолёта">
+            <div class="foto__caption">
+              <p class="foto__autor">Надежда <span class="foto__time-ago">(45 часов назад)</span></p>
               <p class="foto__message">Всем GM и взаимные лайки!
               </p>
-              <button class="hart" type="button"><span class="visually-hidden">Лайк</span></button>
-              <p class="hart-count">Нравится: 2560</p>
+              <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
+              <p class="foto__hart-count">Нравится: 2560</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="catalog-upload">
-        <div class="catalog-upload__wrapper">
-          <div class="catalog-upload__header">
-            <p class="catalog-upload__header-text">Затмите их всех!</br>Выкладывайте все, что накопилось</br>в телефоне!</p>
+      <section class="upload">
+        <div class="upload__wrapper">
+          <div class="upload__header">
+            <p class="upload__header-text">Затмите их всех!</br>Выкладывайте все, что накопилось</br>в телефоне!</p>
           </div>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="foto-editor">
-              <img src="https://via.placeholder.com/150x150" width="280" height="374" alt="Ваше загруженное фото">
+
+          <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="upload__editor">
+              <img src="img/photo-7-tablet.jpg" width="280" height="374" alt="Ваше загруженное фото">
               <ul>
-                <li class="foto-editor-item">
-                  <input class="visually-hidden foto-editor-crop" type="radio" name="group" value="crop" id="foto-editor-crop" checked>
-                  <label class="visually-hidden" for="foto-editor-crop">Обрезка</label>
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
+                <li class="upload__editor-item">
+                  <input class="visually-hidden upload__editor-crop" type="radio" name="group" value="crop" id="upload__editor-crop" checked>
+                  <label class="visually-hidden" for="upload__editor-crop">Обрезка</label>
+                  <div class="upload__controls">
+                    <div class="upload__scale">
+                      <div class="upload__bar"></div>
                     </div>
-                      <div class="toggle"></div>
+                      <div class="upload__toggle"></div>
                   </div>
                 </li>
-                <li class="foto-editor-item">
-                  <input class="visually-hidden foto-editor-fill" type="radio" name="group" value="fill" id="foto-editor-fill">
-                  <label class="visually-hidden" for="foto-editor-fill">Заливка</label>
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle"></div>
+                <li class="upload__editor-item">
+                  <input class="visually-hidden upload__editor-fill" type="radio" name="group" value="fill" id="upload__editor-fill">
+                  <label class="visually-hidden" for="upload__editor-fill">Заливка</label>
+                  <div class="upload__controls">
+                    <div class="upload__scale">
+                      <div class="upload__bar"></div>
                     </div>
+                      <div class="upload__toggle"></div>
+                  </div>
                 </li>
-                <li class="foto-editor-item">
-                  <input class="visually-hidden foto-editor-contrast" type="radio" name="group" value="contrast" id="foto-editor-contrast">
-                  <label class="visually-hidden" for="foto-editor-contrast">Контраст</label>
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle"></div>
+                <li class="upload__editor-item">
+                  <input class="visually-hidden upload__editor-contrast" type="radio" name="group" value="contrast" id="upload__editor-contrast">
+                  <label class="visually-hidden" for="upload__editor-contrast">Контраст</label>
+                  <div class="upload__controls">
+                    <div class="upload__scale">
+                      <div class="upload__bar"></div>
                     </div>
+                      <div class="upload__toggle"></div>
+                  </div>
                 </li>
               </ul>
           </form>
-          <button class="download__soft batton-catalog-post" type="submit">Запостить</button>
-          <button class="download__soft batton-catalog-post" type="reset">Отмена</button>
+          <button class="upload__button upload__button-post" type="submit">Запостить</button>
+          <button class="upload__button upload__button-cancel" type="reset">Отмена</button>
         </div>
       </section>
     </main>
@@ -168,22 +184,22 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__social social">
-          <img class="page-footer__logo" src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Пинк">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twiter" href="#">Мы в Твитере</a>
+          <img class="page-footer__logo" src="img/logotype.svg" width="145" height="40" alt="Пинк">
+          <ul class="page-footer__social-list site-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link-twiter" href="#"><img src="img/twitter.svg"></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link-facebook" href="#"><img src="img/facebook.svg"></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link-youtube" href="#"><img src="img/youtube.svg"></a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__link-img" src="img/copyright__link-img.svg" width="27" height="34" alt="HTML Academy"></a>
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-text">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__copyright-link-img" src="img/html-academy.svg" width="27" height="34" alt="HTML Academy"></a>
         </div>
       </div>
     </footer>
