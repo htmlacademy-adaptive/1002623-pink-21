@@ -1,8 +1,15 @@
 .main-nav {
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 32px;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

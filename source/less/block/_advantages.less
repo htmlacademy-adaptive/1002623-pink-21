@@ -1,6 +1,5 @@
 .advantages {
   text-align: center;
-  background-color: #f2f2f2;
 
   &__slogan {
     font-size: 24px;
@@ -9,8 +8,8 @@
     background-color: #ffffff;
   }
 
-  &__list {
-    padding: 0;
+  &__slogan-bottom {
+    margin-bottom: 0;
   }
 
   &__title {
@@ -24,5 +23,111 @@
     font-weight: 400;
     line-height: 24px;
     color: #283645;
+  }
+
+  &__list {
+    position: relative;
+    margin-bottom: 325px;
+    background-color: #f2f2f2;
+    padding-bottom: 48px;
+  }
+
+  &__list::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 277px;
+    background-image: url("../../img/mobile-with-smile.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    text-align: left;
+    height: 433px;
+    position: relative;
+    padding-left: 330px;
+    padding-top: 65px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-color: #f2f2f2;
+  }
+
+  .advantages__list::after {
+    display: none;
+  }
+
+  .advantages__list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 268px;
+    height: 483px;
+    background-image: url("../../img/mobile-with-smile-tablet.png");
+    background-repeat: no-repeat;
+    background-position-x: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .advantages__item {
+    padding-top: 352px;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .advantages__item-upper,
+  .advantages__item-toggle,
+  .advantages__item-friends {
+    position: relative;
+  }
+
+  .advantages__item-upper::before,
+  .advantages__item-toggle::before,
+  .advantages__item-friends::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 277px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+  }
+
+  .advantages__item-upper::before {
+    background-image: url("../../img/Group\ 9.png");
+  }
+
+  .advantages__item-toggle::before {
+    background-image: url("../../img/Group\ 10.png");
+  }
+
+  .advantages__item-friends::before {
+    background-image: url("../../img/Group\ 11.png");
+  }
+
+  .advantages__list::before {
+    display: none;
   }
 }

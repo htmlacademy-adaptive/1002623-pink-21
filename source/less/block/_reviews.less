@@ -9,6 +9,12 @@
     line-height: 30px;
   }
 
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__text {
     font-size: 14px;
     font-weight: 400;
@@ -27,5 +33,37 @@
   &__next,
   &__image {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    display: block;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__text {
+    order: 1;
+  }
+
+  .reviews__author-name {
+    order: 2;
+  }
+
+  .reviews__author-old {
+    display: block;
+    order: 3;
   }
 }

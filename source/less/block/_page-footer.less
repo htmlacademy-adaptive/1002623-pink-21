@@ -7,6 +7,13 @@
 
   &__social-list {
     padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: row;
   }
 
   &__copyright-text {
@@ -18,5 +25,28 @@
 
   &__copyright-link {
     text-decoration: none;
+  }
+
+  &__wrapper {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

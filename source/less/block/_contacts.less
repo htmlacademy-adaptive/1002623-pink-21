@@ -26,4 +26,39 @@
     line-height: 25px;
     color: #283645;
   }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__info {
+    display: grid;
+    grid-template-areas:
+      "tel post"
+      "adress adress";
+  }
+
+  .contacts__info-tel {
+    grid-area: tel;
+  }
+
+  .contacts__info-post {
+    grid-area: post;
+  }
+
+  .contacts__info-adress {
+    grid-area: adress;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

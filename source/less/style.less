@@ -1,1 +1,65 @@
-// Начните писать стили здесь
+@import "block/_page-header.less";
+@import "block/_main-nav.less";
+@import "block/_download.less";
+@import "block/_advantages.less";
+@import "block/_contacts.less";
+@import "block/_news.less";
+@import "block/_price.less";
+@import "block/_reviews.less";
+@import "block/_page-footer.less";
+@import "block/_site-list.less";
+@import "block/_intro.less";
+@import "block/_allname.less";
+@import "block/_travel.less";
+@import "block/_input-contacts.less";
+@import "block/_platform.less";
+@import "block/_filter-text.less";
+@import "block/_form-footer.less";
+@import "block/_modal-error.less";
+@import "block/_foto.less";
+@import "block/_upload.less";
+
+
+@tablet-width: 660px;
+@desktop-width: 1200px;
+@mobile-width-only: 659px;
+
+body {
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: #ffffff;
+
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.page__body {
+  min-height: 100%;
+  // background-image: url("../img/town.png");
+  margin: 0 auto;
+}
+
+.site-list {
+  list-style: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.button {
+  width: 276px;
+  height: 59px;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
