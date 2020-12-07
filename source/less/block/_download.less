@@ -1,6 +1,4 @@
 .download {
-  background-color: #1d2631;
-
   &__slogan {
     font-weight: 300;
     font-size: 24px;
@@ -40,5 +38,62 @@
     line-height: 24px;
     text-align: center;
     color: #ffffff;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .download {
+    background-color: #1d2631;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .download_img {
+    display: none;
+  }
+
+  .download {
+    background-image: url("../img/group-13.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-color: #1d2631;
+  }
+
+  .download__slogan {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .download__wrapper {
+    position: relative;
+    padding-right: 50%;
+    padding-bottom: 120px;
+    padding-top: 102px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download_img {
+    display: none;
+  }
+
+  .download {
+    background-image: url("../img/group-13.png");
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: bottom;
+    background-color: #1d2631;
+  }
+
+  .download__slogan {
+    font-size: 50px;
+    line-height: 68px;
   }
 }

@@ -1,25 +1,24 @@
 .price {
-  background-color: #f2f2f2;
+  //background-color: #f2f2f2;
   text-transform: uppercase;
+  text-align: center;
+  overflow-x: hidden;
+
+  &__table {
+    border-collapse: collapse;
+  }
+
+  &__table td {
+    border: 2px solid #e5e5e5;
+  }
 
   &__item {
     background-color: #ffffff;
   }
 
-  &__item:first-of-type {
-    display: none;
-  }
-
-  &__item:last-of-type {
-    display: none;
-  }
-
-  &__name {
+  &__name-box {
     background-color: #283645;
-  }
-
-  &__name-hit {
-    text-align: right;
+    color: #ffffff;
   }
 
   &__name-packet {
@@ -43,8 +42,159 @@
     font-weight: 400;
     line-height: 30px;
   }
+}
 
-  &__wrapper p {
-    text-align: center;
+@media (max-width: @mobile-width-only) {
+  .price__wrapper {
+    //width: 100%;
+    position: relative;
+    // overflow: hidden;
+    //margin: 0 auto;
+  }
+
+  .string-0,
+  .string-1,
+  .string-2,
+  .string-3 {
+    display: flex;
+  }
+
+  .string-0 {
+    height: 94px;
+  }
+
+  .price__table {
+    display: flex;
+    position: relative;
+    right: 530px;
+  }
+
+  .price__table td {
+    width: 276px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 19px;
+    box-sizing: border-box;
+  }
+
+  .string-1,
+  .string-2,
+  .string-3 {
+    text-align: right;
+    height: 59px;
+    position: relative;
+  }
+
+  .string-1::after {
+    content: "Розовый фильтр";
+    position: absolute;
+    right: 380px;
+    top: 18px;
+  }
+
+  .string-2::after {
+    content: "Смайлики";
+    position: absolute;
+    right: 435px;
+    top: 18px;
+  }
+
+  .string-3::after {
+    content: "Комментарии";
+    position: absolute;
+    right: 405px;
+    top: 18px;
+  }
+
+  .price__name-hit {
+    background-image: url("../img/hit.svg");
+    background-repeat: no-repeat;
+  }
+
+  .price__name-box2 {
+    line-height: 30px;
+    padding-top: 19px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .price__wrapper {
+    width: 100%;
+  }
+
+  .price__table {
+    width: 100%;
+  }
+
+  .price__table td {
+    width: 25%;
+  }
+
+  .string-0 {
+    height: 75px;
+  }
+
+  .string-1,
+  .string-2,
+  .string-3 {
+    height: 45px;
+  }
+
+  td.price__name-box0 {
+    border: 0;
+  }
+
+  td.col_0 {
+    text-transform: none;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .price__name-hit {
+    background-image: url("../img/hit.svg");
+    background-repeat: no-repeat;
+    background-position-y: -9px;
+    background-position-x: -9px;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .string-0 {
+    height: 94px;
+  }
+
+  .string-1,
+  .string-2,
+  .string-3 {
+    height: 59px;
+  }
+
+  .price__name-box1,
+  .price__name-box2,
+  .price__name-box3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  .price__name-box1 b,
+  .price__name-box2 b,
+  .price__name-box3 b {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .price__name-hit {
+    background-position-y: 0;
+    background-position-x: 0;
+  }
+
+  .price__toggles {
+    display: none;
   }
 }
