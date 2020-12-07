@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page__main-nav {
     display: none;
   }
@@ -26,7 +26,7 @@
   text-align: center;
   color: #ffffff;
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .main-nav__list {
     display: flex;
     flex-direction: row;
@@ -101,7 +101,7 @@
     padding-top: 102px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .download_img {
     display: none;
   }
@@ -184,7 +184,7 @@
     background-position-x: left;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .advantages__list {
     text-align: center;
     display: flex;
@@ -280,7 +280,7 @@
     grid-area: adress;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .contacts__info {
     display: flex;
     flex-direction: row;
@@ -313,7 +313,7 @@
 .news__allnews {
   color: #d22856;
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .news {
     display: block;
   }
@@ -490,7 +490,7 @@
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .string-0 {
     height: 94px;
   }
@@ -550,7 +550,7 @@
 .reviews__image {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .reviews__toggles {
     display: none;
   }
@@ -605,7 +605,7 @@
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
