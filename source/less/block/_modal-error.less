@@ -1,7 +1,9 @@
 .modal {
+  display: none;
 
   box-sizing: border-box;
   text-align: center;
+  background-color: #ffffff;
 
   &__name {
     font-size: 18px;
@@ -22,5 +24,48 @@
   &__background-footer {
     background-color: #f2f2f2;
     padding: 52px 22px 52px 22px;
+  }
+
+  &__background-footer-bgcnone {
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 460px;
+    box-shadow: 0 7px 15px 0 #000101;
+
+    &__name {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 37px;
+      padding: 0 100px;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 60px;
+      padding: 0 70px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal {
+    width: 780px;
+
+    &__name {
+      padding: 0 150px;
+    }
+
+    &__text {
+      padding: 0 200px;
+    }
   }
 }

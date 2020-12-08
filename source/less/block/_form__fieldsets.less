@@ -1,0 +1,44 @@
+@media (min-width: @tablet-width) {
+  .form__fieldsets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .allname {
+    order: 1;
+  }
+
+  .travel {
+    order: 8;
+  }
+
+  .input-contacts {
+    order: 7;
+  }
+
+  .platform {
+    order: 6;
+  }
+
+  .filter-text {
+    order: 9;
+  }
+
+  .form-footer {
+    order: 10;
+  }
+
+  .form__fieldsets fieldset {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldsets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

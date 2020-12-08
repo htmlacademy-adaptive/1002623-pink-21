@@ -1,7 +1,7 @@
 .filter-text {
   border: none;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &__legend {
     font-size: 14px;
@@ -14,7 +14,7 @@
   }
 
   &__message {
-    width: 276px;
+    width: 100%;
     height: 197px;
     font-size: 18px;
     font-weight: 400;
@@ -23,5 +23,36 @@
     box-sizing: border-box;
     padding-left: 20px;
     resize: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .filter-text {
+    border: 2px solid #e5e5e5;
+    margin-left: 22px;
+    margin-right: 22px;
+    padding: 47px 60px 53px 60px;
+
+    &__legend {
+      line-height: 30px;
+    }
+
+    &__message {
+      font-size: 18px;
+      line-height: 30px;
+      height: 189px;
+      border: 2px solid #e5e5e5;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter-text {
+    width: 100%;
+    padding: 44px 60px 45px 60px;
+
+    &__message {
+      height: 124px;
+    }
   }
 }

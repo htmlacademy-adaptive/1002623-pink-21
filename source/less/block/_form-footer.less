@@ -1,4 +1,9 @@
 .form-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding-left: 22px;
   padding-right: 22px;
 
@@ -26,5 +31,22 @@
 
   &__required-star {
     color: #d22856;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-footer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
   }
 }
