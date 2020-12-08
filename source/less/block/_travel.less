@@ -9,6 +9,7 @@
     color: #d22856;
     text-align: center;
     text-transform: uppercase;
+    padding: 0 20px;
   }
 
   &__option {
@@ -21,5 +22,36 @@
 
   &__option:last-of-type {
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .travel {
+    background: none;
+    border: 2px solid #e5e5e5;
+    margin-right: 22px;
+    margin-left: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travel {
+    width: 100%;
+    padding: 0 auto;
+  }
+
+  .site-list {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .travel__option {
+    width: 30%;
+    height: 30px;
+    padding: 10px;
+    list-style: none;
   }
 }

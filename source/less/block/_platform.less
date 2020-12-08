@@ -1,8 +1,8 @@
 .platform {
-  background: #e5e5e5;
+  //background: #e5e5e5;
   border: none;
   padding-bottom: 42px;
-  padding-top: 42px;
+  padding-top: 0;
 
   &__legend {
     font-size: 14px;
@@ -24,5 +24,32 @@
 
   &__item:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .platform {
+    border: 2px solid #e5e5e5;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .platform {
+    width: 40%;
+    padding-bottom: 0;
+
+    &__item {
+      margin-bottom: 62px;
+    }
+  }
+
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
   }
 }

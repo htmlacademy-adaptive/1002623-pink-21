@@ -6,14 +6,49 @@
     font-weight: 300;
     line-height: 33px;
     color: #ffffff;
+    background-color: #f2f2f2;
   }
 
-  &__text {
+  &__text,
+  &__text-after {
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
     color: #283645;
     background-color: #ffffff;
     margin-top: 54px;
+  }
+
+  &__text-after {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    &__slogan {
+      font-size: 50px;
+      line-height: 68px;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-top: 100px;
+      margin-bottom: 0;
+      margin-left: 85px;
+      margin-right: 85px;
+    }
+
+    &__text-after {
+      display: inline;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    margin-bottom: 70px;
   }
 }
