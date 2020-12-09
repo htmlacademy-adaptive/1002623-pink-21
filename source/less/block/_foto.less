@@ -12,8 +12,8 @@
   }
 
   &__post {
-    width: 280px;
-    background: #f2f2f2;
+    width: 100%;
+    // background: #f2f2f2;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -50,11 +50,38 @@
   }
 
   &__panorama {
-    margin: -20px;
+    //margin: -20px;
     margin-bottom: 25px;
   }
 
   &__caption {
     padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .foto {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    &__post:not(:first-child) {
+      width: calc(1 / 2 * 100% - 30px);
+    }
+
+    &__post {
+      height: max-content;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .foto {
+    &__post:not(:first-child) {
+      width: calc(1 / 3 * 100% - 30px);
+    }
   }
 }
