@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,15 +12,17 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
-      </a>
+      <div class="page-header__logo-and-button">
+        <a class="page-header__logo">
+          <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
+        </a>
+        <button class="page__main-nav page__main-nav--toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">
+              <a  href="index.html">
                 Главная
               </a>
             </li>
@@ -34,7 +37,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="https://htmlacademy.ru/intensive/adaptive">
                 HTML Academy
               </a>
             </li>
@@ -53,34 +56,35 @@
           </p>
         </div>
       </section>
+
       <section class="foto">
         <div class="foto__wrapper">
 
-        <div class="foto__labal">Панорама дня</div>
-          <div class="foto__post">
-          <img  class="foto__panorama" src="img/panorama-tablet.jpg" width="320" height="137" alt="Панорама дня">
+        <!--<div class="foto__labal">Панорама дня</div>-->
 
+          <div class="foto__post">
+          <img  class="foto__img" src="img/panorama-desktop.jpg" width="100%" height="100%" alt="Панорама дня">
+          <!--<img  class="foto__panorama" src="img/panorama-tablet.jpg" width="100%" height="100%" alt="Панорама дня">-->
           <div class="foto__caption">
             <p class="foto__autor">Анна <span class="foto__time-ago">(5 минут назад)</span></p>
-            <p class="foto__message">Прыгать или нет? Напишите в</br>комментарии свой совет и</br>смотрите прямую трансляцию в</br>перископе, задавайте свои вопросы!</p>
+            <p class="foto__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
             <p class="foto__hart-count">Нравится: 215</p>
           </div>
           </div>
 
           <div class="foto__post">
-            <img  class="foto__img" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фото автомобиля">
+            <img  class="foto__img" src="img/photo-1-mobile.jpg" width="100%" height="100%" alt="Фото автомобиля">
             <div class="foto__caption">
               <p class="foto__autor">Левон <span class="foto__time-ago">(5 часов назад)</span></p>
-              <p class="foto__message">Вчера он на луну летал, сегодня</br>в руки к нам попал.
-              </p>
+              <p class="foto__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
               <p class="foto__hart-count">Нравится: 356</p>
             </div>
           </div>
 
           <div class="foto__post">
-            <img  class="foto__img" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Фото барабана">
+            <img  class="foto__img" src="img/photo-2-mobile.jpg" width="100%" height="100%" alt="Фото барабана">
             <div class="foto__caption">
               <p class="foto__autor">Антон <span class="foto__time-ago">(12 часов назад)</span></p>
               <p class="foto__message">Соседи будут рады!</p>
@@ -90,17 +94,18 @@
           </div>
 
           <div class="foto__post">
-            <img  class="foto" src="img/photo-3-tablet.jpg" width="280" height="180" alt="Фото барабана">
+            <img  class="foto" src="img/photo-3-tablet.jpg" width="100%" height="100%" alt="Фото барабана">
             <div class="foto__caption">
               <p class="foto__autor">Борис <span class="foto__time-ago">(20 часов назад)</span></p>
-              <p class="foto__message">Здесь могла быть ваша цитата о</br>высоком и вечном.
+              <p class="foto__message">Здесь могла быть ваша цитата о высоком и вечном.
               </p>
               <img class="foto__hart" src="img/heart.svg" width="13" height="12" alt="Сердце">
               <p class="foto__hart-count">Нравится: 215</p>
             </div>
           </div>
+
           <div class="foto__post">
-            <img  class="foto" src="img/photo-4-tablet.jpg" width="280" height="180" alt="Фото оранжевого шарта">
+            <img  class="foto" src="img/photo-4-tablet.jpg" width="100%" height="100%" alt="Фото оранжевого шарта">
             <div class="foto__caption">
               <p class="foto__autor">Сергей <span class="foto__time-ago">(25 часов назад)</span></p>
               <p class="foto__message">Где снег-то?
@@ -109,8 +114,9 @@
               <p class="foto__hart-count">Нравится: 150</p>
             </div>
           </div>
+
           <div class="foto__post">
-            <img  class="foto" src="img/photo-5-tablet.jpg" width="280" height="180" alt="Фото солца над крылом самолёта">
+            <img  class="foto" src="img/photo-5-tablet.jpg" width="100%" height="100%" alt="Фото солца над крылом самолёта">
             <div class="foto__caption">
               <p class="foto__autor">Максим <span class="foto__time-ago">(40 часов назад)</span></p>
               <p class="foto__message">Где снег-то?
@@ -121,7 +127,7 @@
           </div>
 
           <div class="foto__post">
-            <img  class="foto" src="img/photo-6-tablet.jpg" width="280" height="180" alt="Фото солца над крылом самолёта">
+            <img  class="foto" src="img/photo-6-tablet.jpg" width="100%" height="100%" alt="Фото солца над крылом самолёта">
             <div class="foto__caption">
               <p class="foto__autor">Надежда <span class="foto__time-ago">(45 часов назад)</span></p>
               <p class="foto__message">Всем GM и взаимные лайки!
@@ -130,6 +136,8 @@
               <p class="foto__hart-count">Нравится: 2560</p>
             </div>
           </div>
+
+
         </div>
       </section>
 
@@ -141,8 +149,8 @@
 
           <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="upload__editor">
-              <img src="img/photo-7-tablet.jpg" width="280" height="374" alt="Ваше загруженное фото">
-              <ul>
+              <img class="upload__editor-img" src="img/photo-7-tablet.jpg" width="100%" height="100%" alt="Ваше загруженное фото">
+              <ul class="upload__editor-list">
                 <li class="upload__editor-item">
                   <input class="visually-hidden upload__editor-crop" type="radio" name="group" value="crop" id="upload__editor-crop" checked>
                   <label class="visually-hidden" for="upload__editor-crop">Обрезка</label>
@@ -183,8 +191,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="img/logotype.svg" width="145" height="40" alt="Пинк">
+
         <div class="page-footer__social social">
-          <img class="page-footer__logo" src="img/logotype.svg" width="145" height="40" alt="Пинк">
           <ul class="page-footer__social-list site-list">
             <li class="page-footer__social-item">
               <a class="page-footer__social-link page-footer__social-link-twiter" href="#"><img src="img/twitter.svg"></a>
@@ -197,6 +206,7 @@
             </li>
           </ul>
         </div>
+
         <div class="page-footer__copyright">
           <p class="page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__copyright-link-img" src="img/html-academy.svg" width="27" height="34" alt="HTML Academy"></a>
