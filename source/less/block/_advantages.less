@@ -6,6 +6,12 @@
     font-weight: 300;
     line-height: 29px;
     background-color: #ffffff;
+    margin-top: 0;
+    padding: 46px 0 70px 0;
+  }
+
+  &__slogan-top {
+    margin: 0;
   }
 
   &__slogan-bottom {
@@ -16,6 +22,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    margin: 0;
   }
 
   &__description {
@@ -27,8 +34,11 @@
 
   &__list {
     position: relative;
+    margin: 0;
     margin-bottom: 325px;
     background-color: #f2f2f2;
+    padding: 0 20px;
+    padding-top: 54px;
     padding-bottom: 48px;
   }
 
@@ -73,6 +83,10 @@
     background-repeat: no-repeat;
     background-position-x: left;
   }
+
+  .advantages__slogan {
+    padding: 58px 0 19px 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -80,7 +94,7 @@
     text-align: center;
 
     height: 550px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
 
@@ -109,6 +123,22 @@
   .advantages__item-toggle,
   .advantages__item-friends {
     position: relative;
+  }
+
+  .advantages__item-upper::after,
+  .advantages__item-toggle::after,
+  .advantages__item-friends::after {
+    content: "";
+    position: absolute;
+    top: 260px;
+    left: 0;
+    width: 300px;
+    height: 17px;
+    background-image: url("../img/shadow.png");
+    background-repeat: no-repeat;
+    background-position-y: 0%;
+    background-position-x: 200%;
+    z-index: -1;
   }
 
   .advantages__item-upper::before,

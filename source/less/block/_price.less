@@ -1,5 +1,5 @@
 .price {
-  //background-color: #f2f2f2;
+  background-color: #f2f2f2;
   text-transform: uppercase;
   text-align: center;
   overflow-x: hidden;
@@ -10,15 +10,11 @@
 
   &__table td {
     border: 2px solid #e5e5e5;
+    background-color: #ffffff;
   }
 
   &__item {
     background-color: #ffffff;
-  }
-
-  &__name-box {
-    background-color: #283645;
-    color: #ffffff;
   }
 
   &__name-packet {
@@ -42,6 +38,11 @@
     font-weight: 400;
     line-height: 30px;
   }
+}
+
+td.price__name-box {
+  background-color: #283645;
+  color: #ffffff;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -114,6 +115,10 @@
   .price__name-box2 {
     line-height: 30px;
     padding-top: 19px;
+  }
+
+  .price__toggles {
+    margin: 45px 0 49px 0;
   }
 }
 

@@ -1,24 +1,41 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background-color: fade(#000000, 30%);
+  //background-color: fade(#000000, 30%);
+  //background-image: url("../img/town.png");
   color: #ffffff;
 
+  &__logo {
+    width: 74px;
+    height: 23px;
+  }
+
   &__logo-and-button {
+    height: 66px;
+    background-color: fade(#000000, 30%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__logo-and-button {
+    height: auto;
+    background: none;
+  }
+
   .page__main-nav {
     display: none;
   }
 
   .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    //grid-template-columns: 200px auto;
   }
 }

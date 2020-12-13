@@ -36,7 +36,8 @@ body {
 
 .page__body {
   min-height: 100%;
-  // background-image: url("../img/town.png");
+  background-image: url("../img/town.png");
+  background-repeat: no-repeat;
   margin: 0 auto;
 }
 
@@ -63,4 +64,18 @@ body {
   line-height: 30px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.slider__toggle,
+.slider__toggle--current {
+  outline: none;
+  cursor: pointer;
+}
+
+.slider__toggle:hover {
+  background: fade(#283645, 60%);
+}
+
+.slider__toggle:active {
+  background: fade(#283645, 10%);
 }

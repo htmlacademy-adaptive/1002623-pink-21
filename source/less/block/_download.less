@@ -8,28 +8,46 @@
   }
 
   &__list {
-    text-align: center;
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 58px;
     margin-top: 32px;
     margin-bottom: 28px;
   }
 
   &__soft {
-    width: 280px;
-    height: 55px;
-    border: 3px solid #ffffff;
-    border-radius: 30px;
-    line-height: 55px;
-    text-align: center;
     margin: auto;
     margin-top: 28px;
+    text-align: center;
+    //width: 280px;
+    //height: 55px;
   }
 
   &__soft__button {
+    display: block;
+    margin: auto;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    line-height: 55px;
+    width: 280px;
+    height: 55px;
+  }
+
+  &__soft__button:hover {
+    color: #d22856;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &__soft__button:active {
+    color: fade(#d22856, 30%);
+    border-color: #ffffff;
+    background-color: #ffffff;
   }
 
   &__legend {
@@ -49,6 +67,11 @@
 
 @media (max-width: @mobile-width-only) {
   .download {
+    // background-color: #1d2631;
+  }
+
+  .download__store {
+    width: 100%;
     background-color: #1d2631;
   }
 }
@@ -63,7 +86,7 @@
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    background-color: #1d2631;
+    background-color: none;
   }
 
   .download__slogan {
@@ -77,6 +100,10 @@
     padding-bottom: 120px;
     padding-top: 102px;
   }
+
+  .download__store {
+    background-color: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -85,15 +112,19 @@
   }
 
   .download {
+    background: none;
     background-image: url("../img/group-13.png");
     background-repeat: no-repeat;
     background-position-x: 300px;
     background-position-y: bottom;
-    background-color: #1d2631;
   }
 
   .download__slogan {
     font-size: 50px;
     line-height: 68px;
+  }
+
+  .download__store {
+    background-color: none;
   }
 }
