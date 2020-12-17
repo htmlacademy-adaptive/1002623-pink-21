@@ -11,6 +11,7 @@
 </head>
   <body class="page__body">
     <header class="page-header">
+      <div class="page-header-wrapper">
       <div class="page-header__logo-and-button">
         <a class="page-header__logo">
           <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
@@ -45,21 +46,23 @@
 
         </div>
       </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Пинк - раскрась жизнь в розовый!</h1>
+
       <section class="download">
         <h2 class="visually-hidden">
           Скачать приложение
         </h2>
         <div class="download__wrapper">
             <p class="download__slogan">
-              Взгляни на жизнь<br>
+              Взгляните на жизнь<br>
               иначе!
             </p>
             <img class="download_img" src="img/mobile.png" width="320" height="286" alt="Телефон в руке">
-<div class="download__store">
+          <div class="download__store">
           <div class="download__soft">
             <a class="download__soft__button" type="text" href="https://apps.apple.com/ru/app/apple-store/id375380948">
               Скачать приложение
@@ -112,7 +115,7 @@
         <div class="news__wrapper">
           <h2 class="visually-hidden">Новости</h2>
             <div class="news__list">
-              <h3 class="news__title">Эффект на 24 часа!</h3>
+              <h3 class="news__title">Эффект</br> на 24 часа!</h3>
               <p class="news__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
               <a class="news__allnews" href="#">Узнать больше об исследовании</a>
             </div>
@@ -124,7 +127,7 @@
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <div class="reviews__list slider__list">
 
-            <img class="reviews__image" src="img/reviews-quotes.svg" width="79" height="63" alt="Отзыв">
+            <div class="reviews__image"><img  src="img/quotes.svg" width="79" height="63" alt="Отзыв"></div>
 
             <blockquote class="reviews__item slider__item">
               <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
@@ -138,7 +141,7 @@
             </blockquote>
 
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle--current" type="button" aria-label="Первый слайд"></button>
+            <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
             <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
             <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
           </p>
@@ -153,10 +156,14 @@
           <table class="price__table">
             <tr class="string-0">
                 <td class="price__name-box0 col_0"></td>
-                <td class="price__name-box price__name-box1 col_1"><b>База</b></br>1,99 USD</td>
+                <td class="price__name-box price__name-box1 col_1"><p><b>База</b></br>
+                  <span class="only-price">1,99 USD</span></p></td>
                 <td class="price__name-box price__name-box2 col_2 price__name-hit">
-                  <b>Стандарт</b></br>3,99 USD</td>
-                <td class="price__name-box price__name-box3 col_3"><b>Анлим</b></br>9,99 USD</td>
+                  <p><b>Стандарт</b></br>
+                  <span class="only-price">3,99 USD</span></p>
+                </td>
+                <td class="price__name-box price__name-box3 col_3"><p><b>Анлим</b></br>
+                  <span class="only-price">9,99 USD</span></p></td>
             </tr>
             <tr class="string-1">
                 <td class="price__name-item col_0">Розовый фильтр</td>
@@ -173,7 +180,7 @@
             <tr class="string-2">
                 <td class="price__name-item col_0">Смайлики</td>
                 <td class="col_1">
-                  <img class="price__availability-no" src="img/availability-no.svg" width="31" height="21" alt="Не включено">
+                  <img class="price__availability-no" src="img/no.svg" width="27" height="27" alt="Не включено">
                 </td>
                 <td class="col_2">
                   <img class="price__availability-yes" src="img/availability-yes.svg" width="31" height="21" alt="Включено">
@@ -185,10 +192,10 @@
             <tr class="string-3">
                 <td class="price__name-item col_0">Комментарии</td>
                 <td class="col_1">
-                  <img class="price__availability-no" src="img/availability-no.svg" width="31" height="21" alt="Не включено">
+                  <img class="price__availability-no" src="img/no.svg" width="27" height="27" alt="Не включено">
                 </td>
                 <td class="col_2">
-                  <img class="price__availability-no" src="img/availability-no.svg" width="31" height="21" alt="Не включено">
+                  <img class="price__availability-no" src="img/no.svg" width="27" height="27" alt="Не включено">
                 </td>
                 <td class="col_3">
                   <img class="price__availability-yes" src="img/availability-yes.svg" width="31" height="21" alt="Включено">
@@ -197,7 +204,7 @@
         </table>
         <p class="price__toggles slider__toggles">
           <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
-          <button class="slider__toggle--current" type="button" aria-label="Второй слайд"></button>
+          <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
           <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
         </p>
         </div>
@@ -218,13 +225,13 @@
             </div>
             <div class="contacts__info-adress">
               <p class="contacts__text-adress">Приезжайте в гости:</p>
-              <p class="contacts__text">ул. Большая</br>Конюшенная 19/8</p>
+              <p class="contacts__text">ул. Большая</br>Конюшенная, 19/8</p>
             </div>
           </div>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7454994034267!2d30.321770666742257!3d59.936365119046876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjIiTiAzMMKwMTknMTguMCJF!5e0!3m2!1sru!2sby!4v1605907352826!5m2!1sru!2sby" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
         </div>
+
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7454994034267!2d30.321770666742257!3d59.936365119046876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjIiTiAzMMKwMTknMTguMCJF!5e0!3m2!1sru!2sby!4v1605907352826!5m2!1sru!2sby" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
       </section>
     </main>
 
