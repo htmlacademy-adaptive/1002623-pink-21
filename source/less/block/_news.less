@@ -1,6 +1,7 @@
 .news {
   display: none;
 
+
   &__wrapper {
     height: 276px;
   }
@@ -15,6 +16,8 @@
     font-weight: 700;
     line-height: 36px;
     text-align: left;
+    padding-top: 40px;
+    margin-bottom: 0;
   }
 
   &__description,
@@ -23,6 +26,7 @@
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    margin-bottom: 8px;
   }
 
   &__allnews {
@@ -30,48 +34,20 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .news {
-    display: block;
-    margin-top: 50px;
-
-    &__wrapper {
-      height: 345px;
-    }
-
-    &__list {
-
-      position: relative;
-      padding-left: 500px;
-      padding-top: 100px;
-    }
-
-    &__list::before {
-      display: none;
-    }
-
-    &__list::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 298px;
-      height: 345px;
-      background-image: url("../img/24time.svg");
-      background-repeat: no-repeat;
-    }
-  }
-}
-
 @media (min-width: @tablet-width) {
   .news {
     display: block;
     padding-bottom: 109px;
+
+    &__wrapper {
+      margin-top: 25px;
+      padding: 0 20px;
+    }
   }
 
   .news__list {
     position: relative;
-    padding-left: 330px;
+    padding-left: 310px;
   }
 
   .news__list::before {
@@ -83,5 +59,60 @@
     height: 276px;
     background-image: url("../img/24time-tablet.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .news {
+    display: block;
+    min-height: 380px;
+    background: #f2f2f2;
+    margin-top: 50px;
+
+    &__wrapper {
+      width: 960px;
+      height: 345px;
+      margin-top: 307px;
+    }
+
+    .news__title br {
+      display: none;
+    }
+
+    &__list {
+      position: relative;
+      padding-left: 360px;
+      padding-top: 100px;
+      padding-right: 20px;
+    }
+
+    .news__description {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      padding-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    .news__allnews {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    &__list::before {
+      display: none;
+    }
+
+    &__list::after {
+      content: "";
+      position: absolute;
+      top: 80px;
+      left: -10px;
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/24time.svg");
+      background-repeat: no-repeat;
+    }
   }
 }

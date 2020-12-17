@@ -21,6 +21,12 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .page-header__logo-and-button {
+    min-height: 110px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .page-header__logo-and-button {
     height: auto;
@@ -33,9 +39,19 @@
 
   .page-header {
     background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
+    //grid-template-columns: 200px auto;
+  }
+
+  .page-header-wrapper {
+    width: 960px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    //grid-template-columns: 200px auto;
+    align-items: center;
   }
 }
