@@ -8,28 +8,48 @@
   }
 
   &__list {
-    text-align: center;
-    padding: 0;
-    margin-top: 32px;
-    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 58px;
+    margin-top: 34px;
+    margin-bottom: 14px;
   }
 
   &__soft {
-    width: 280px;
-    height: 55px;
-    border: 3px solid #ffffff;
-    border-radius: 30px;
-    line-height: 55px;
-    text-align: center;
     margin: auto;
-    margin-top: 28px;
+    margin-top: 27px;
+    text-align: center;
+    //width: 280px;
+    //height: 55px;
   }
 
   &__soft__button {
+    display: block;
+    margin: auto;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    //line-height: 18px;
+    padding-top: 11px;
+    width: 280px;
+    height: 55px;
+    box-sizing: border-box;
+  }
+
+  &__soft__button:hover {
+    color: #d22856;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  &__soft__button:active {
+    color: fade(#d22856, 30%);
+    border-color: #ffffff;
+    background-color: #ffffff;
   }
 
   &__legend {
@@ -38,6 +58,7 @@
     line-height: 24px;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 31px;
   }
 
   &__wrapper {
@@ -48,7 +69,12 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .download {
+  .download__slogan {
+    margin-bottom: 32px;
+  }
+
+  .download__store {
+    width: 100%;
     background-color: #1d2631;
   }
 }
@@ -62,20 +88,43 @@
     background-image: url("../img/group-13.png");
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: bottom;
-    background-color: #1d2631;
+    background-position-y: 75px;
+    background-color: none;
+  }
+
+  .download__list {
+    margin-bottom: 26px;
+  }
+
+  .download__legend {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
   }
 
   .download__slogan {
     font-size: 40px;
     line-height: 48px;
+    margin: 0 45px;
+    margin-left: 55px;
   }
 
   .download__wrapper {
     position: relative;
     padding-right: 50%;
-    padding-bottom: 120px;
-    padding-top: 102px;
+    padding-bottom: 85px;
+    padding-top: 95px;
+  }
+
+  .download__store {
+    background-color: none;
+  }
+
+  .download__soft__button {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 45px;
   }
 }
 
@@ -85,15 +134,45 @@
   }
 
   .download {
-    background-image: url("../img/group-13.png");
+    background: none;
+  }
+
+  .download__wrapper {
+    width: 960px;
+    height: 645px;
+    background-image: url("../img/hand-desktop.png");
     background-repeat: no-repeat;
-    background-position-x: 300px;
-    background-position-y: bottom;
-    background-color: #1d2631;
+    background-position-x: 25px;
+    background-position-y: 100px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 100px;
   }
 
   .download__slogan {
     font-size: 50px;
     line-height: 68px;
+    padding-right: 650px;
+  }
+
+  .download__store {
+    background-color: none;
+    padding-right: 650px;
+  }
+
+  .download__soft {
+    margin-top: 35px;
+  }
+
+  .download__soft__button {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-top: 15px;
+  }
+
+  .download__list {
+    margin-top: 70px;
+    margin-bottom: 45px;
   }
 }

@@ -6,6 +6,7 @@
     font-weight: 300;
     line-height: 29px;
     color: #283645;
+    margin-top: 42px;
   }
 
   &__phone,
@@ -16,6 +17,21 @@
     line-height: 33px;
     color: #d22856;
     text-decoration: none;
+  }
+
+  &__phone:hover,
+  &__email:hover,
+  &__text:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &__phone:active,
+  &__email:active,
+  &__text:active {
+    color: #283645;
+    opacity: 0.3;
+    text-decoration: underline;
   }
 
   &__phone-number,
@@ -31,34 +47,137 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .contacts__phone-number {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .contacts__email-post,
+  .contacts__text-adress {
+    margin-bottom: 0;
+  }
+
+  .contacts__info-post {
+    margin-bottom: 2px;
+  }
+
+  .contacts__text {
+    margin-top: 0;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 54px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
+
   .contacts__info {
     display: grid;
+    margin-bottom: 0;
     grid-template-areas:
       "tel post"
       "adress adress";
   }
 
+  .contacts__phone-number,
+  .contacts__email-post,
+  .contacts__text-adress {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .contacts__info-tel,
+  .contacts__info-post {
+    margin-top: 18px;
+  }
+
+  .contacts__info-adress {
+    margin-top: 45px;
+    grid-area: adress;
+  }
+
   .contacts__info-tel {
     grid-area: tel;
+    padding-left: 18px;
   }
 
   .contacts__info-post {
     grid-area: post;
   }
 
-  .contacts__info-adress {
+  /*.contacts__info-adress {
     grid-area: adress;
+  }*/
+
+  .contacts__text {
+    margin-top: 0;
+  }
+
+  .contacts__map {
+    height: 374px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .contacts__map {
+    height: 480px;
+  }
+
   .contacts__info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-left: 58px;
+    padding-right: 40px;
+  }
+
+  .contacts__info-tel,
+  .contacts__info-post,
+  .contacts__info-adress {
+    margin-top: 40px;
+  }
+
+  .contacts__info-tel {
+    order: 1;
+    padding-left: 0;
+  }
+
+  .contacts__info-adress {
+    order: 2;
+  }
+
+  .contacts__info-post {
+    order: 3;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  .contacts__phone-number,
+  .contacts__email-post,
+  .contacts__text-adress {
+    margin-bottom: 20px;
   }
 }
