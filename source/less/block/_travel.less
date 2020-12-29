@@ -1,15 +1,33 @@
 .travel {
-  background: #e5e5e5;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 30px;
+  background: #f2f2f2;
   border: none;
 
+  & ul.site-list {
+    margin-top: 0;
+  }
+
+  &__wrapper {
+    padding: 0 20px;
+    //  padding-top: 10px;
+  }
+
   &__legend {
+    width: 100%;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     color: #d22856;
     text-align: center;
     text-transform: uppercase;
-    padding: 0 20px;
+    padding: 0 35px;
+    //padding: 0;
+    padding-top: 40px;
+    margin-bottom: 12px;
+    background: #f2f2f2;
+    box-sizing: border-box;
   }
 
   &__option {
@@ -17,41 +35,119 @@
     font-weight: 400;
     line-height: 30px;
     color: #283645;
-    padding-bottom: 69px;
+    padding-bottom: 22px;
   }
 
   &__option:last-of-type {
     padding-bottom: 0;
   }
+
+  &__option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 20px;
+  }
+
+  &-input + label::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: -4px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    background-color: #ffffff;
+  }
+
+  &-input:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -31px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &-input:hover + label::before {
+    border: 2px solid #283645;
+  }
+
+  &-input:active + label::before {
+    border: 2px solid #d22856;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .form__fieldsets .travel {
+    margin-bottom: 55px;
+  }
+
   .travel {
     background: none;
     border: 2px solid #e5e5e5;
     margin-right: 22px;
     margin-left: 22px;
+    padding-bottom: 35px;
+
+    &__wrapper {
+      padding-top: 5px;
+      padding-left: 55px;
+    }
+
+    &__legend {
+      width: auto;
+      padding: 0 30px;
+      padding-top: 0;
+      margin-bottom: 12px;
+      background: none;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .travel {
-    width: 100%;
-    padding: 0 auto;
+  .form__fieldsets .travel {
+    margin-bottom: 52px;
   }
 
-  .site-list {
+  .travel {
+    width: 960px;
+    height: 235px;
+    margin: 0 auto;
+    padding: 0;
+
+    &__wrapper {
+      padding: 0;
+      margin: 0 auto;
+      //padding-left: 90px;
+      box-sizing: border-box;
+    }
+
+    &__legend {
+      margin-bottom: 8px;
+    }
+  }
+
+  .travel ul.site-list {
     display: flex;
     flex-direction: column;
     height: 100px;
     flex-wrap: wrap;
-    padding: 0;
+
+    padding: 0 60px;
   }
 
   .travel__option {
-    width: 30%;
+    width: 33%;
     height: 30px;
     padding: 10px;
+    //margin-right: 10px;
+
     list-style: none;
   }
 }

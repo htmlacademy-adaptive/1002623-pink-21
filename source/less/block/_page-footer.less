@@ -78,16 +78,19 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     margin: 0 auto;
+    padding: 0;
   }
 
   .page-footer__wrapper {
     width: 960px;
-    padding: 45px 0;
+    padding: 45px 10px;
+    margin: 0 auto;
     // padding: 74px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .page-footer__copyright-text {
