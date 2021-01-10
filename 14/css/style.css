@@ -1315,6 +1315,10 @@ td.price__name-box {
   margin: 0 auto;
   padding: 0 20px;
 }
+.intro__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .intro__slogan {
   font-size: 24px;
   font-weight: 300;
