@@ -1,37 +1,37 @@
 .intro {
   text-align: center;
+  min-height: 172px;
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
   &__slogan {
     font-size: 24px;
     font-weight: 300;
     line-height: 33px;
     color: #ffffff;
-    background-color: #f2f2f2;
-  }
-
-  &__text,
-  &__text-after {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #283645;
-    background-color: #ffffff;
-    margin-top: 54px;
-  }
-
-  &__text-after {
-    display: none;
+    //margin-top: 30px;
+    margin: 0 auto;
+    padding-top: 30px;
+    //background-color: #f2f2f2;
   }
 }
 
 @media (min-width: @tablet-width) {
   .intro {
+    padding-top: 40px;
+    padding-bottom: 42px;
+    height: 249px;
+
     &__slogan {
       font-size: 50px;
       line-height: 68px;
+      margin-bottom: 0;
     }
 
-    &__text {
+    /*&__text {
       font-size: 18px;
       margin-top: 100px;
       margin-bottom: 0;
@@ -43,12 +43,30 @@
       display: inline;
       font-size: 18px;
       margin: 0 auto;
-    }
+    }*/
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
-    margin-bottom: 70px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 0;
+
+    &__wrapper {
+      width: 960px;
+      padding-top: 5px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    &__slogan {
+      margin-top: 20px;
+    }
+
+    /* &__slogan br:first-of-type {
+      display: none;
+    }*/
   }
 }

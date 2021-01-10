@@ -1,33 +1,56 @@
 .modal {
-  display: none;
-
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: max-content;
+  box-shadow: 0 7px 15px 0 #000101;
   box-sizing: border-box;
   text-align: center;
   background-color: #ffffff;
+  margin: 0 auto;
+  padding-top: 0;
+
+  &__wrapper {
+    padding: 0 20px;
+    padding-top: 40px;
+  }
 
   &__name {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
-    margin-bottom: 37px;
+    //margin-bottom: 20px;
+    padding-bottom: 25px;
+    margin: 0;
   }
 
   &__text {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    //margin-bottom: 50px;
+    margin: 0;
+    padding-bottom: 41px;
   }
 
   &__background-footer {
     background-color: #f2f2f2;
-    padding: 52px 22px 52px 22px;
+    padding: 52px 0 52px 0;
   }
 
   &__background-footer-bgcnone {
     padding-bottom: 52px;
+  }
+
+  &__button {
+    width: 276px;
+    height: 63px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
   }
 }
 
@@ -44,14 +67,19 @@
       font-size: 30px;
       line-height: 40px;
       text-align: center;
-      margin-bottom: 37px;
+      // margin-bottom: 37px;
       padding: 0 100px;
+      margin-bottom: 23px;
     }
 
     &__text {
       font-size: 18px;
-      margin-bottom: 60px;
-      padding: 0 70px;
+      margin-bottom: 35px;
+      padding: 0 55px;
+    }
+
+    &__button {
+      width: 300px;
     }
   }
 }
@@ -60,12 +88,35 @@
   .modal {
     width: 780px;
 
+    &__wrapper {
+      padding: 0;
+      padding-top: 40px;
+    }
+
     &__name {
       padding: 0 150px;
     }
 
     &__text {
-      padding: 0 200px;
+      padding: 0 180px;
+    }
+
+    &__button {
+      width: 458px;
+    }
+
+    &__background-footer-bgcnone {
+      background-color: #f2f2f2;
+      padding: 52px 0 52px 0;
+    }
+
+    &__background-footer-bgcnone .modal__button {
+      width: 298px;
+    }
+
+    &__error {
+      padding: 0 190px;
+      padding-bottom: 30px;
     }
   }
 }

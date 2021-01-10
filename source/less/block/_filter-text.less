@@ -1,7 +1,15 @@
 .filter-text {
+  margin: 0 auto;
   border: none;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0;
+  margin-bottom: 44px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
   &__legend {
     font-size: 14px;
@@ -10,49 +18,73 @@
     text-align: center;
     text-transform: uppercase;
     color: #d22856;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
 
   &__message {
     width: 100%;
-    height: 197px;
+    height: 200px;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     color: #283645;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
     box-sizing: border-box;
+    padding-top: 10px;
     padding-left: 20px;
     resize: none;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .form__fieldsets .filter-text {
+    margin-bottom: 65px;
+  }
+
   .filter-text {
     border: 2px solid #e5e5e5;
     margin-left: 22px;
     margin-right: 22px;
-    padding: 47px 60px 53px 60px;
+    padding: 0 35px;
+    padding-bottom: 45px;
+
+    &__wrapper {
+      margin-top: 15px;
+    }
 
     &__legend {
       line-height: 30px;
+      padding: 0 35px;
     }
 
     &__message {
       font-size: 18px;
       line-height: 30px;
-      height: 189px;
+      height: 195px;
       border: 2px solid #e5e5e5;
+      padding-top: 15px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .filter-text {
-    width: 100%;
-    padding: 44px 60px 45px 60px;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    //width: 100%;
+    //padding: 44px 60px 45px 60px;
+
+    &__wrapper {
+      margin: 0 auto;
+      padding: 12px 58px;
+      padding-bottom: 40px;
+    }
 
     &__message {
-      height: 124px;
+      height: 128px;
+      padding: 15px 20px;
     }
   }
 }
