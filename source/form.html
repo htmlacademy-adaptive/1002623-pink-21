@@ -55,8 +55,8 @@
       <section class="intro">
         <div class="intro__wrapper">
             <p class="intro__slogan">
-              Конкурс на самое</br>
-              безбашенное</br>
+              Конкурс на самое
+              безбашенное
               путешествие с Пинк
             </p>
         </div>
@@ -66,8 +66,8 @@
         <div class="promo__wrapper">
         <p class="promo__text">
           Поделитесь своей историей и получите шанс выиграть
-          ценный приз — 1000 миль на вашу бонусную карту!</br>
-          <span class="promo__text-after">Пожалуйста, заполните форму ниже: </span> </p>
+          ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="promo__text-after"></br>Пожалуйста, заполните форму ниже: </span> </p>
           </div>
         </section>
 
@@ -234,6 +234,30 @@
 
 </div>
 </section>-->
+<script>
+      var navMain = document.querySelector('.main-nav');
+      var navQwe = document.querySelector('.page__main-nav');
+      var navToggle = document.querySelector('.page__main-nav');
 
+      //navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+
+        if (navQwe.classList.contains('page__main-nav--close')) {
+          navQwe.classList.remove('page__main-nav--close');
+          navQwe.classList.add('page__main-nav--opened');
+        } else {
+          navQwe.classList.add('page__main-nav--close');
+          navQwe.classList.remove('page__main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

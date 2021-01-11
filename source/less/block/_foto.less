@@ -1,4 +1,11 @@
 .foto {
+  background-color: #ffffff;
+  padding-top: 50px;
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+
   &__labal {
     width: 140px;
     height: 36px;
@@ -13,10 +20,11 @@
 
   &__post {
     width: 100%;
-    // background: #f2f2f2;
+    background: #f2f2f2;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    //margin-top: 20px;
+    padding-bottom: 18px;
+    margin-bottom: 19px;
   }
 
   &__autor {
@@ -24,6 +32,7 @@
     font-weight: 700;
     line-height: 24px;
     color: #283645;
+    margin-bottom: 0;
   }
 
   &__time-ago {
@@ -39,49 +48,330 @@
     font-weight: 400;
     line-height: 24px;
     color: #283645;
+    margin-top: 0;
+    margin-bottom: 11px;
   }
 
   &__hart-count {
+    position: relative;
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     color: #d22856;
     text-transform: uppercase;
+    margin: 0;
+    padding-left: 31px;
+  }
+
+  &__hart-count::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../../img/heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__img {
+    height: 180px;
   }
 
   &__panorama {
-    //margin: -20px;
-    margin-bottom: 25px;
+    width: 100vw;
+    height: 137px;
+    //margin-bottom: 25px;
+    margin: 0 auto;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  &__post:first-of-type {
+    position: relative;
+  }
+
+  &__post:first-of-type::before {
+    content: "Панорама дня";
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    //left: 140px;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
   }
 
   &__caption {
     padding-left: 17px;
-    padding-right: 17px;
+    padding-right: 9px;
+    background: #f2f2f2;
   }
 }
 
 @media (min-width: @tablet-width) {
   .foto {
     &__wrapper {
+      margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      //justify-content: flex-start;
+      justify-content: space-between;
+    }
+
+    /*&__post:not(:first-child) {
+      width: calc(1 / 2 * 100% - 10px);
+      margin-bottom: 21px;
+      padding-bottom: 23px;
+    }*/
+
+    /*&__post:not(:first-child) &__caption {
+      padding-left: 30px;
+      padding-top: 5px;
+    }*/
+
+    /*&__post:not(:first-child) &__hart-count {
+      margin-top: 10px;
+    }*/
+
+    &__post {
+      //height: max-content;
+      margin: 0;
+    }
+
+    &__img {
+      height: 300px;
+    }
+
+    &__panorama {
+      height: 509px;
+    }
+
+    &__post:first-of-type::before {
+      top: 54px;
+      //left: 140px;
+      right: 0;
+    }
+
+    /*&__hart-count {
+    }*/
+
+    &__hart-count::before {
+      display: none;
+    }
+
+    &__hart-count::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 13px;
+      height: 12px;
+      background-image: url("../../img/heart.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &__post:not(:first-child) &__caption &__hart-count::after {
+      top: 5px;
+      right: 20px;
+    }
+
+    &__wrapper &__post:first-child &__caption:first-of-type {
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__autor {
+      order: 1;
+    }
+
+    &__message {
+      order: 3;
+      margin-bottom: 5px;
+      padding-left: 0;
+    }
+
+    &__hart-count {
+      order: 2;
+      margin-top: 18px;
+      padding-right: 30px;
+    }
+
+    &__wrapper &__post:first-child {
+      margin-bottom: 51px;
     }
 
     &__post:not(:first-child) {
-      width: calc(1 / 2 * 100% - 30px);
+      padding-bottom: 8px;
+      width: calc(1 / 2 * 100% - 10px);
+      margin-bottom: 21px;
     }
 
-    &__post {
-      height: max-content;
+    &__post:not(:first-child) &__caption {
+      padding-left: 30px;
+      padding-top: 5px;
+      display: grid;
+      //height: 100%;
+      // flex-direction: column;
+      grid-template-rows: 1fr 1.5fr 1fr;
+    }
+
+    &__post:not(:first-child) &__autor {
+      order: 1;
+    }
+
+    &__post:not(:first-child) &__message {
+      order: 2;
+      margin-bottom: 5px;
+    }
+
+    &__post:not(:first-child) &__hart-count {
+      order: 3;
+      margin-top: 0;
+      padding-right: 30px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .foto {
+    margin: 0 auto;
+
+    &__wrapper {
+      width: 960px;
+      margin: 0 auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    /*&__post:not(:first-child) {
+      width: 300px;
+    }*/
+
+    /*&__post:not(:first-child) &__caption {
+      padding-left: 30px;
+      padding-top: 5px;
+    }*/
+
+    /*&__post:not(:first-child) &__hart-count {
+      margin-top: 10px;
+    }*/
+
+    &__post {
+      //height: max-content;
+      margin: 0;
+    }
+
+    &__img {
+      width: 300px;
+      height: 400px;
+    }
+
+    &__panorama {
+      margin: 0 auto;
+      width: 100vw;
+      height: 506px;
+      //margin-bottom: 25px;
+      margin-left: -10px;
+    }
+
+    /*&__hart-count {
+      padding-left: 0;
+    }*/
+
+    &__hart-count::before {
+      display: none;
+    }
+
+    &__hart-count::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 13px;
+      height: 12px;
+      background-image: url("../../img/heart.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &__post:not(:first-child) &__caption &__hart-count::after {
+      top: 5px;
+      right: 20px;
+    }
+
+    &__wrapper &__post:first-child &__caption:first-of-type {
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__autor {
+      order: 1;
+    }
+
+    &__message {
+      order: 3;
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+
+    &__hart-count {
+      order: 2;
+      margin-top: 18px;
+      padding-right: 30px;
+      padding-left: 0;
+    }
+
+    &__wrapper &__post:first-child {
+      margin-bottom: 51px;
+    }
+
     &__post:not(:first-child) {
-      width: calc(1 / 3 * 100% - 30px);
+      width: 300px;
+      padding-bottom: 8px;
+      margin-bottom: 55px;
+    }
+
+    &__post:not(:first-child) &__caption {
+      padding-left: 30px;
+      padding-top: 5px;
+      display: grid;
+      //height: 100%;
+      // flex-direction: column;
+      grid-template-rows: 1fr 1.5fr 1fr;
+    }
+
+    &__post:not(:first-child) &__autor {
+      order: 1;
+    }
+
+    &__post:not(:first-child) &__message {
+      order: 2;
+      margin-bottom: 5px;
+    }
+
+    &__post:not(:first-child) &__hart-count {
+      order: 3;
+      margin-top: 0;
+      padding-right: 30px;
     }
   }
 }

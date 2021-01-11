@@ -122,9 +122,12 @@
     padding: 0;
 
     &__wrapper {
-      padding: 0;
+      padding: 0 60px;
+      padding-right: 0;
+      padding-top: 10px;
       margin: 0 auto;
       //padding-left: 90px;
+      // padding-left: 60px;
       box-sizing: border-box;
     }
 
@@ -135,19 +138,59 @@
 
   .travel ul.site-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100px;
     flex-wrap: wrap;
+    margin-top: 1px;
+    //width: 100%;
+    /* display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 80px 80px;
+    justify-content: space-between;
+    justify-items: space-between;*/
+    //padding: 0 60px;
+    // padding-left: 87px;
+  }
 
-    padding: 0 60px;
+  .travel__option:nth-child(1) {
+    order: 1;
+    margin-left: 38px;
+    margin-bottom: 52px;
+  }
+
+  .travel__option:nth-child(2) {
+    order: 4;
+    margin-left: 38px;
+  }
+
+  .travel__option:nth-child(3) {
+    order: 2;
+    margin-left: 97px;
+  }
+
+  .travel__option:nth-child(4) {
+    order: 5;
+    margin-left: 135px;
+  }
+
+  .travel__option:nth-child(5) {
+    order: 3;
+    margin-left: 94px;
+  }
+
+  .travel__option:nth-child(6) {
+    order: 6;
+    margin-left: 105px;
   }
 
   .travel__option {
-    width: 33%;
+    //width: 200px;
     height: 30px;
-    padding: 10px;
-    //margin-right: 10px;
-
+    padding: 0;
+    margin: 0;
+    //padding-left: 47px;
+    //margin-left: 40px;
+    //margin-right: 70px;
     list-style: none;
   }
 }
