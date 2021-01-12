@@ -25,12 +25,17 @@
   .page-header__logo-and-button {
     min-height: 110px;
   }
+
+  .page-header__logo {
+    padding-bottom: 34px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__logo-and-button {
     height: auto;
     background: none;
+    padding: 0;
   }
 
   .page__main-nav {
@@ -48,10 +53,16 @@
 
   .page-header-wrapper {
     width: 960px;
+    padding: 0 10px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+  }
+
+  & .site-list__item {
+    margin-left: -20px;
   }
 }
