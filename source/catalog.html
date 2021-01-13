@@ -15,7 +15,11 @@
       <div class="page-header-wrapper">
       <div class="page-header__logo-and-button">
         <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Пинк">
+          </picture>
         </a>
         <button class="page__main-nav page__main-nav--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -62,15 +66,12 @@
         </div>
       </section>
 
-
-
-                <section class="promo">
-                  <div class="promo__wrapper">
-                  <p class="promo__text">
-                    Взгляните на фотографии, которые выкладывают пользователи!</br> Видите, как не хватает ваших?</p>
-                    </div>
-                  </section>
-
+      <section class="promo">
+        <div class="promo__wrapper">
+          <p class="promo__text">
+            Взгляните на фотографии, которые выкладывают пользователи!</br> Видите, как не хватает ваших?</p>
+        </div>
+      </section>
 
       <section class="foto">
         <div class="foto__wrapper">
@@ -78,7 +79,12 @@
         <!--<div class="foto__labal">Панорама дня</div>-->
 
           <div class="foto__post">
-          <img  class="foto__img foto__panorama" src="img/panorama-desktop.jpg" width="100%" height="100%" alt="Панорама дня">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img  class="foto__img foto__panorama" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
+
           <!--<img  class="foto__panorama" src="img/panorama-tablet.jpg" width="100%" height="100%" alt="Панорама дня">-->
           <div class="foto__caption">
 
@@ -90,7 +96,11 @@
           </div>
 
           <div class="foto__post">
-            <img  class="foto__img" src="img/photo-1-desktop.jpg" width="100%" height="100%" alt="Фото автомобиля">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img  class="foto__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="100%" height="100%" alt="Фото автомобиля">
+              </picture>
             <div class="foto__caption">
               <p class="foto__autor">Левон <span class="foto__time-ago">(5 часов назад)</span></p>
               <p class="foto__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -100,7 +110,11 @@
           </div>
 
           <div class="foto__post">
-            <img  class="foto__img" src="img/photo-2-desktop.jpg" width="100%" height="100%" alt="Фото барабана">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img  class="foto__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="100%" height="100%" alt="Фото барабана">
+              </picture>
             <div class="foto__caption">
               <p class="foto__autor">Антон <span class="foto__time-ago">(12 часов назад)</span></p>
               <p class="foto__message">Соседи будут рады!</p>
@@ -110,7 +124,11 @@
           </div>
 
           <div class="foto__post">
-            <img  class="foto__img" src="img/photo-3-desktop.jpg" width="100%" height="100%" alt="Фото барабана">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img  class="foto__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="100%" height="100%" alt="Фото стеклянной крыши">
+              </picture>
             <div class="foto__caption">
               <p class="foto__autor">Борис <span class="foto__time-ago">(20 часов назад)</span></p>
               <p class="foto__message">Здесь могла быть ваша цитата о высоком и вечном.
@@ -121,7 +139,11 @@
           </div>
 
           <div class="foto__post">
-            <img  class="foto__img" src="img/photo-4-desktop.jpg" width="100%" height="100%" alt="Фото оранжевого шарта">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img  class="foto__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="100%" height="100%" alt="Фото оранжевого шарта">
+              </picture>
             <div class="foto__caption">
               <p class="foto__autor">Сергей <span class="foto__time-ago">(25 часов назад)</span></p>
               <p class="foto__message">Самая кубанская в мире!
@@ -132,7 +154,11 @@
           </div>
 
           <div class="foto__post">
-            <img  class="foto__img" src="img/photo-5-desktop.jpg" width="100%" height="100%" alt="Фото солца над крылом самолёта">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <img  class="foto__img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" width="100%" height="100%" alt="Фото ног над пропастью">
+              </picture>
             <div class="foto__caption">
               <p class="foto__autor">Максим <span class="foto__time-ago">(40 часов назад)</span></p>
               <p class="foto__message">Где снег-то?
@@ -143,7 +169,11 @@
           </div>
 
           <div class="foto__post">
-            <img  class="foto__img" src="img/photo-6-desktop.jpg" width="100%" height="100%" alt="Фото солца над крылом самолёта">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <img  class="foto__img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" width="100%" height="100%" alt="Фото солца над крылом самолёта">
+              </picture>
             <div class="foto__caption">
               <p class="foto__autor">Надежда <span class="foto__time-ago">(45 часов назад)</span></p>
               <p class="foto__message">Всем GM и взаимные лайки!
@@ -165,7 +195,12 @@
 
           <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="upload__editor">
-              <img class="upload__editor-img" src="img/photo-7-tablet.jpg" width="100%" height="100%" alt="Ваше загруженное фото">
+              <div class="upload__editor-img">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                  <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="100%" height="100%" alt="Ваше загруженное фото">
+                </picture>
+              </div>
               <ul class="upload__editor-list site-list">
                 <li class="upload__editor-item crop">
                   <input class="visually-hidden upload__editor-crop" type="radio" name="group" value="crop" id="upload__editor-crop" checked>
@@ -242,7 +277,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="page-footer__logo" src="img/logotype.svg" width="145" height="40" alt="Пинк">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logotype-blue-desktop.svg">
+          <img class="page-footer__logo" src="img/logotype.svg" width="145" height="40" alt="Пинк">
+        </picture>
+
 
         <div class="page-footer__social social">
           <ul class="page-footer__social-list site-list">
