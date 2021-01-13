@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">    <base href="https://htmlacademy-adaptive.github.io/1002623-pink-21/16/">
+</head>
+
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header-wrapper">
+      <div class="page-header__logo-and-button">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Пинк">
+          </picture>
+        </a>
+        <button class="page__main-nav page__main-nav--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+        <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="main-nav-link"  href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav-link" href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav-link" href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма для отправки заявки</h1>
+      <section class="intro">
+        <div class="intro__wrapper">
+            <p class="intro__slogan">
+              Конкурс на самое
+              безбашенное
+              путешествие с Пинк
+            </p>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="promo__wrapper">
+        <p class="promo__text">
+          Поделитесь своей историей и получите шанс выиграть
+          ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="promo__text-after"></br>Пожалуйста, заполните форму ниже: </span> </p>
+          </div>
+        </section>
+
+      <section class="form">
+        <div class="form__wrapper">
+        <h2 class="visually-hidden">Форма заявки</h2>
+        <form class="form__fieldsets"  action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="allname">
+                <div class="allname__surname">
+                    <label class="allname__surname-label" for="your_surname">Фамилия:</label>
+                    <input class="allname__surname-input" id="your_surname" type="text" name="surname" required placeholder="Укажите фамилию *" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+                </div>
+                <p class="allname__name">
+                    <label class="allname__name-label" for="your_name">Имя:</label>
+                    <input class="allname__name-input" id="your_name" type="text" name="name" required placeholder="Введите ваше имя *" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+                </p>
+                <p class="allname__patronymic">
+                    <label class="allname__patronymic-label" for="your_patronymic">Отчество:</label>
+                    <input class="allname__patronymic-input" id="your_patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+                </p>
+            </fieldset>
+
+            <fieldset class="travel">
+              <legend class="travel__legend">Ваши безбашенные достижения в путешествии</legend>
+
+              <div class="travel__wrapper">
+                <ul class="site-list">
+                    <li class="travel__option travel_checkbox">
+                        <input class="visually-hidden travel-input" type="checkbox"
+                        name="shark" id="travel-shark" checked>
+                        <label for="travel-shark">Сделал селфи с акулой</label>
+                    </li>
+
+                    <li class="travel__option travel-checkbox">
+                        <input class="visually-hidden travel-input" type="checkbox"
+                        name="sun" id="travel-sun" checked>
+                        <label for="travel-sun">Обгорел на пляже</label>
+                    </li>
+
+                        <li class="travel__option travel-checkbox">
+                            <input class="visually-hidden travel-input" type="checkbox"
+                            name="norrise" id="travel-norrise">
+                            <label for="travel-norrise">Видел Чака Норриса</label>
+                        </li>
+
+                    <li class="travel__option travel-checkbox">
+                        <input class="visually-hidden travel-input" type="checkbox"
+                        name="souvenirs" id="travel-souvenirs">
+                        <label for="travel-souvenirs">Накупил сувениров</label>
+                    </li>
+
+                    <li class="travel__option travel-checkbox">
+                        <input class="visually-hidden travel-input" type="checkbox"
+                        name="tower" id="travel-tower" checked>
+                        <label for="travel-tower">Удержал башню</label>
+                    </li>
+
+                        <li class="travel__option travel-checkbox">
+                            <input class="visually-hidden travel-input" type="checkbox"
+                            name="hotel" id="travel-hotel">
+                            <label for="travel-hotel">Разгромил отель</label>
+                        </li>
+                </ul>
+                </div>
+            </fieldset>
+
+            <fieldset class="input-contacts">
+              <legend class="input-contacts__legend">Контактная информация</legend>
+              <div class="input-contacts__fields">
+              <label class="input-contacts__tel-label" for="your-tel">Номер телефона</label>
+              <input class="input-contacts__tel-input" type="tel" name="tel"
+                placeholder="Номер, пожалуйста" id="your-tel">
+              <label class="input-contacts__email-label" for="your-email">Адрес почты</label>
+              <input class="input-contacts__email-input" type="email" name="email"
+                required placeholder="Введите почту *" id="your-email">
+                </div>
+            </fieldset>
+
+            <fieldset class="platform">
+                <legend class="platform__legend">С каким приложением путешествовали?</legend>
+                <ul class="site-list">
+                  <li class="platform__item">
+                    <input class="visually-hidden platform__radio" type="radio" name="group"
+                      value="iOS" id="platform-iOS" checked>
+                    <label class="platform__label" for="platform-iOS">Pink для iOS</label>
+                  </li>
+                  <li class="platform__item">
+                    <input class="visually-hidden platform__radio" type="radio" name="group" value="Android"
+                      id="platform-android">
+                    <label class="platform__label" for="platform-android">Pink на Android</label>
+                  </li>
+                  <li class="platform__item">
+                    <input class="visually-hidden platform__radio" type="radio" name="group" value="Windows"
+                      id="platform-windows">
+                    <label class="platform__label" for="platform-windows">Windows Phone</label>
+                  </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="filter-text">
+              <legend class="filter-text__legend">Опишите свои эмоции</legend>
+
+              <div class="filter-text__wrapper">
+              <textarea  class="filter-text__message" id="message_text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
+            </fieldset>
+
+        <div class="form-footer">
+          <div class="form-footer__wrapper">
+        <button class="button form-footer__button" type="submit">Отправить форму</button>
+        <p class="form-footer__required-text"><span class="form-footer__required-star">*</span> — обязательные для заполнения поля</p>
+      </div>
+        </div>
+
+        </form>
+      </div>
+      </section>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logotype-blue-desktop.svg">
+          <img class="page-footer__logo" src="img/logotype.svg" width="145" height="40" alt="Пинк">
+        </picture>
+
+
+        <div class="page-footer__social social">
+          <ul class="page-footer__social-list site-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link-twiter" href="#"><img src="img/twitter.svg"></a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link-facebook" href="#"><img src="img/facebook.svg"></a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link-youtube" href="#"><img src="img/youtube.svg"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-text">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__copyright-link-img" src="img/html-academy.svg" width="27" height="34" alt="HTML Academy"></a>
+        </div>
+      </div>
+    </footer>
+<!--<section class="modal">
+  <div class="modal__wrapper">
+  <h2 class="modal__name">Что-то пошло не так!</h2>
+  <p class="modal__text modal__error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__background-footer-bgcnone">
+  <button class="button modal__button">ОК</button>
+    </div>
+</div>
+</section>-->
+
+<!--<section class="modal">
+  <div class="modal__wrapper">
+  <h2 class="modal__name">Ваша заявка отправлена</h2>
+  <p class="modal__text">Спасибо за ваше участие, ваша заявка
+    уже поступила к нам. В ближайшее
+    время мы рассмотрим ее и оповестим вас.</p>
+  </div>
+    <div class="modal__background-footer">
+  <button class="button modal__button">Закрыть окно</button>
+
+</div>
+</section>-->
+<script>
+      var navMain = document.querySelector('.main-nav');
+      var navQwe = document.querySelector('.page__main-nav');
+      var navToggle = document.querySelector('.page__main-nav');
+
+      //navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+
+        if (navQwe.classList.contains('page__main-nav--close')) {
+          navQwe.classList.remove('page__main-nav--close');
+          navQwe.classList.add('page__main-nav--opened');
+        } else {
+          navQwe.classList.add('page__main-nav--close');
+          navQwe.classList.remove('page__main-nav--opened');
+        }
+      });
+    </script>
+  </body>
+</html>
