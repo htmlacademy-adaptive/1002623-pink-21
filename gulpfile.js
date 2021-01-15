@@ -98,7 +98,7 @@ exports.server = server;
 const reload = done => {
   sync.reload();
   done();
- }
+}
 // Watcher
 
 const watcher = () => {
