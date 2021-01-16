@@ -29,7 +29,7 @@
     "build": "gulp build",
     "styles": "gulp styles",
     "scripts": "gulp scripts",
-    "start": "gulp start",
+    "start": "gulp",
     "images": "gulp images"
   },
   "browserslist": [
