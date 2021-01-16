@@ -31,7 +31,6 @@ const styles = () => {
 
 exports.styles = styles;
 
-
 //Images
 
 const images = () => {
@@ -52,8 +51,20 @@ exports.images = images;
 const html = () => {
   return gulp.src("source/*.html")
   .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build"))
+  .pipe(sync.stream());
 }
+
+//Scripts
+const scripts = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
 
 
 //Copy
@@ -112,6 +123,7 @@ const build = gulp.series(
   gulp.parallel(
   styles,
   html,
+  scripts,
   copy,
   images
   )
@@ -119,15 +131,18 @@ const build = gulp.series(
 
 exports.build = build;
 
-exports.start = gulp.series(
+const start = gulp.series(
   clean,
   gulp.parallel(
   styles,
   html,
+  scripts,
   copy,
   ),
   gulp.series(
   server,
   watcher
 )
-);
+)
+
+exports.start = start;
