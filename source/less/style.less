@@ -31,7 +31,17 @@
   src:
     url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -41,7 +51,7 @@
   src:
     url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -54,6 +64,14 @@ body {
   background-color: #ffffff;
   background-repeat: no-repeat;
   margin: 0;
+}
+
+.page__body-bg-position {
+  background-position: 50% 340px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 50% 340px;
+  }
 }
 
 .page__body {

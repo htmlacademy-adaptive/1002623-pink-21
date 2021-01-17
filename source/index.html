@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/script.min.js"></script>
+
     <!--<link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> -->
@@ -238,7 +238,6 @@
             </div>
           </div>
         </div>
-
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7454994034267!2d30.321770666742257!3d59.936365119046876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjIiTiAzMMKwMTknMTguMCJF!5e0!3m2!1sru!2sby!4v1605907352826!5m2!1sru!2sby" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
@@ -272,10 +271,14 @@
   </div>
 </footer>
 
+<script src="js/script.min.js"></script>
+
 <!--<script>
   var navMain = document.querySelector('.main-nav');
   var navQwe = document.querySelector('.page__main-nav');
   var navToggle = document.querySelector('.page__main-nav');
+  var navMain1 = document.querySelector('.page__body');
+  var navMain2 = document.querySelector('.page-header__logo-and-button');
 
   //navMain.classList.remove('main-nav--nojs');
 
@@ -296,9 +299,26 @@
       navQwe.classList.remove('page__main-nav--opened');
     }
 
+  if (navMain1.classList.contains('page__body-bg-position')) {
+    navMain1.classList.remove('page__body-bg-position');
+    navMain1.classList.add('main-nav--opened');
+  }
+  else {
+    navMain1.classList.add('page__body-bg-position');
+    navMain1.classList.remove('main-nav--opened');
+  }
 
 
-  });
+  if (navMain2.classList.contains('bg-color-header')) {
+    navMain2.classList.remove('bg-color-header');
+    navMain2.classList.add('main-nav--opened');
+  }
+  else {
+    navMain2.classList.add('bg-color-header');
+    navMain2.classList.remove('main-nav--opened');
+  }
+});
 </script>-->
+
   </body>
 </html>
