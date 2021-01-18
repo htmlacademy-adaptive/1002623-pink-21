@@ -61,6 +61,7 @@ td.price__name-box {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
+  line-height: 30px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -152,7 +153,10 @@ td.price__name-box {
 
   .price__name-hit {
     background-image: url("../img/hit.svg");
+
     background-repeat: no-repeat;
+    background-position-y: -2px;
+    background-position-x: -2px;
   }
 
   .price__name-box2 {
@@ -210,6 +214,10 @@ td.price__name-box {
   td.price__name-box0 {
     border: 0;
     background: none;
+  }
+
+  td.price__name-box {
+    padding-top: 6px;
   }
 
   td.col_0 {
@@ -278,7 +286,6 @@ td.price__name-box {
   .price__name-box3 {
     font-size: 24px;
     line-height: 30px;
-    font-weight: 300;
   }
 
   .price__name-box1 b,
@@ -290,6 +297,7 @@ td.price__name-box {
   }
 
   .price__name-hit {
+    background-image: url("../img/hit-desktop.png");
     background-position-y: 0;
     background-position-x: 0;
   }
@@ -297,5 +305,10 @@ td.price__name-box {
   .price__toggles {
     display: none;
     margin-bottom: 35px;
+  }
+
+  td.price__name-box {
+    font-weight: bold;
+    padding-top: 0;
   }
 }

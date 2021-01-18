@@ -33,6 +33,11 @@
     line-height: 24px;
     color: #283645;
     margin-bottom: 0;
+    margin-top: 14px;
+  }
+
+  &__post:first-child .foto__autor {
+    margin-top: 12px;
   }
 
   &__time-ago {
@@ -113,7 +118,7 @@
 
   &__caption {
     padding-left: 17px;
-    padding-right: 9px;
+    padding-right: 5px;
     background: #f2f2f2;
   }
 }
@@ -121,27 +126,12 @@
 @media (min-width: @tablet-width) {
   .foto {
     &__wrapper {
-      margin-top: 30px;
+      margin-top: 27px;
       display: flex;
       flex-wrap: wrap;
       //justify-content: flex-start;
       justify-content: space-between;
     }
-
-    /*&__post:not(:first-child) {
-      width: calc(1 / 2 * 100% - 10px);
-      margin-bottom: 21px;
-      padding-bottom: 23px;
-    }*/
-
-    /*&__post:not(:first-child) &__caption {
-      padding-left: 30px;
-      padding-top: 5px;
-    }*/
-
-    /*&__post:not(:first-child) &__hart-count {
-      margin-top: 10px;
-    }*/
 
     &__post {
       //height: max-content;
@@ -157,7 +147,7 @@
     }
 
     &__post:first-of-type::before {
-      top: 54px;
+      top: 57px;
       //left: 140px;
       right: 0;
     }
@@ -172,7 +162,7 @@
     &__hart-count::after {
       content: "";
       position: absolute;
-      top: 5px;
+      top: 7px;
       right: 0;
       width: 13px;
       height: 12px;
@@ -182,8 +172,8 @@
     }
 
     &__post:not(:first-child) &__caption &__hart-count::after {
-      top: 5px;
-      right: 20px;
+      top: 7px;
+      right: 25px;
     }
 
     &__wrapper &__post:first-child &__caption:first-of-type {
@@ -197,6 +187,15 @@
 
     &__autor {
       order: 1;
+      margin-top: 12px;
+    }
+
+    &__post:first-child .foto__autor {
+      margin-top: 18px;
+    }
+
+    &__post:first-child {
+      padding-bottom: 18px;
     }
 
     &__message {
@@ -205,20 +204,31 @@
       padding-left: 0;
     }
 
+    &__message br {
+      display: none;
+    }
+
     &__hart-count {
+      order: 2;
+      margin-top: 18px;
+      padding: 0;
+      padding-top: 3px;
+    }
+
+    &__post:first-child .foto__hart-count {
       order: 2;
       margin-top: 18px;
       padding-right: 30px;
     }
 
     &__wrapper &__post:first-child {
-      margin-bottom: 51px;
+      margin-bottom: 50px;
     }
 
     &__post:not(:first-child) {
-      padding-bottom: 8px;
+      padding-bottom: 15px;
       width: calc(1 / 2 * 100% - 10px);
-      margin-bottom: 21px;
+      margin-bottom: 20px;
     }
 
     &__post:not(:first-child) &__caption {
@@ -250,6 +260,7 @@
 @media (min-width: @desktop-width) {
   .foto {
     margin: 0 auto;
+    padding-top: 90px;
 
     &__wrapper {
       width: 960px;
@@ -258,18 +269,9 @@
       box-sizing: border-box;
     }
 
-    /*&__post:not(:first-child) {
-      width: 300px;
-    }*/
-
-    /*&__post:not(:first-child) &__caption {
-      padding-left: 30px;
-      padding-top: 5px;
-    }*/
-
-    /*&__post:not(:first-child) &__hart-count {
-      margin-top: 10px;
-    }*/
+    &__post:first-of-type::before {
+      top: 54px;
+    }
 
     &__post {
       //height: max-content;
@@ -301,7 +303,7 @@
       content: "";
       position: absolute;
       top: 5px;
-      right: 0;
+      right: 10px;
       width: 13px;
       height: 12px;
       background-image: url("../../img/heart.svg");
@@ -310,13 +312,13 @@
     }
 
     &__post:not(:first-child) &__caption &__hart-count::after {
-      top: 5px;
-      right: 20px;
+      top: 9px;
+      right: 25px;
     }
 
     &__wrapper &__post:first-child &__caption:first-of-type {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 27px;
+      padding-right: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -330,7 +332,10 @@
     &__message {
       order: 3;
       margin-bottom: 5px;
-      font-size: 13px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
     }
 
     &__hart-count {
@@ -341,18 +346,18 @@
     }
 
     &__wrapper &__post:first-child {
-      margin-bottom: 51px;
+      margin-bottom: 50px;
     }
 
     &__post:not(:first-child) {
       width: 300px;
-      padding-bottom: 8px;
-      margin-bottom: 55px;
+      padding-bottom: 13px;
+      margin-bottom: 54px;
     }
 
     &__post:not(:first-child) &__caption {
-      padding-left: 30px;
-      padding-top: 5px;
+      padding-left: 27px;
+      padding-top: 7px;
       display: grid;
       //height: 100%;
       // flex-direction: column;
@@ -372,6 +377,16 @@
       order: 3;
       margin-top: 0;
       padding-right: 30px;
+    }
+
+    &__post:first-child .foto__hart-count {
+      order: 2;
+      margin-top: 18px;
+      padding-right: 40px;
+    }
+
+    &__post:first-child {
+      padding-bottom: 17px;
     }
   }
 }
