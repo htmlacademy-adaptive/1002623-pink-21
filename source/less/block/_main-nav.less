@@ -101,7 +101,9 @@
 .main-nav-link {
   position: relative;
   display: block;
-  padding: 25px 0;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 15px;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
@@ -110,7 +112,7 @@
   text-decoration: none;
   background-color: #283645;
   border-top: 1px solid fade(#ffffff, 15%);
-  border-bottom: 1px solid #000000;
+  //border-bottom: 1px solid #000000;
 }
 
 .main-nav__list a:hover {
@@ -119,6 +121,38 @@
 
 .main-nav__list a:active {
   color: fade(#d22856, 30%);
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav-link {
+    position: relative;
+    display: block;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #283645;
+    border-top: 1px solid fade(#ffffff, 15%);
+    //border-bottom: 1px solid #000000;
+  }
+
+  .page__main-nav--opened {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 53px;
+      right: 17px;
+      width: 29px;
+      height: 3px;
+      background-color: #ffffff;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -152,6 +186,7 @@
     &::after {
       content: "";
       position: absolute;
+      top: 53px;
       right: 0;
       bottom: 0;
       left: 0;

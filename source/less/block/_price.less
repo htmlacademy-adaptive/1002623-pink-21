@@ -1,9 +1,13 @@
 .price {
-  background-color: #f2f2f2;
+  //background-color: #f2f2f2;
   text-transform: uppercase;
   text-align: center;
   overflow-x: hidden;
-  padding-top: 82px;
+  padding-top: 110px;
+  background-image: url("../img/grey-price.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -20px;
 
   &__table {
     border-collapse: collapse;
@@ -57,6 +61,7 @@ td.price__name-box {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
+  line-height: 30px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -148,7 +153,10 @@ td.price__name-box {
 
   .price__name-hit {
     background-image: url("../img/hit.svg");
+
     background-repeat: no-repeat;
+    background-position-y: -2px;
+    background-position-x: -2px;
   }
 
   .price__name-box2 {
@@ -163,7 +171,9 @@ td.price__name-box {
 
 @media (min-width: @tablet-width) {
   .price {
-    padding-top: 60px;
+    padding-top: 97px;
+    background-image: url("../img/grey-tablet-price.png");
+    background-position: 0 -15px;
   }
 
   .price__wrapper {
@@ -178,7 +188,7 @@ td.price__name-box {
 
   .price__table {
     width: 100%;
-    margin-bottom: 58px;
+    margin-bottom: 51px;
   }
 
   .price__table td {
@@ -186,18 +196,28 @@ td.price__name-box {
   }
 
   .string-0 {
-    height: 75px;
+    height: 79px;
   }
 
   .string-1,
   .string-2,
   .string-3 {
-    height: 45px;
+    height: 47px;
+  }
+
+  .string-1 img,
+  .string-2 img,
+  .string-3 img {
+    padding-top: 5px;
   }
 
   td.price__name-box0 {
     border: 0;
     background: none;
+  }
+
+  td.price__name-box {
+    padding-top: 6px;
   }
 
   td.col_0 {
@@ -207,10 +227,10 @@ td.price__name-box {
   }
 
   .price__name-hit {
-    background-image: url("../img/hit.svg");
+    background-image: url("../img/hit-tablet.svg");
     background-repeat: no-repeat;
-    background-position-y: -9px;
-    background-position-x: -9px;
+    background-position-y: -1px;
+    background-position-x: -1px;
   }
 
   .price__toggles .slider__toggle {
@@ -220,7 +240,10 @@ td.price__name-box {
 
 @media (min-width: @desktop-width) {
   .price {
-    padding-top: 30px;
+    //padding-top: 30px;
+    padding-top: 75px;
+    background-image: url("../img/price-bg-desktop.png");
+    background-position: 0 -16px;
   }
 
   .only-price {
@@ -240,7 +263,7 @@ td.price__name-box {
     width: 960px;
     padding: 0 10px;
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
     margin: 0 auto;
   }
 
@@ -255,7 +278,7 @@ td.price__name-box {
   .string-1,
   .string-2,
   .string-3 {
-    height: 59px;
+    height: 61px;
   }
 
   .price__name-box1,
@@ -263,7 +286,6 @@ td.price__name-box {
   .price__name-box3 {
     font-size: 24px;
     line-height: 30px;
-    font-weight: 300;
   }
 
   .price__name-box1 b,
@@ -275,11 +297,18 @@ td.price__name-box {
   }
 
   .price__name-hit {
+    background-image: url("../img/hit-desktop.png");
     background-position-y: 0;
     background-position-x: 0;
   }
 
   .price__toggles {
     display: none;
+    margin-bottom: 35px;
+  }
+
+  td.price__name-box {
+    font-weight: bold;
+    padding-top: 0;
   }
 }

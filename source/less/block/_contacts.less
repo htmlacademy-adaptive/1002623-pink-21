@@ -6,7 +6,7 @@
     font-weight: 300;
     line-height: 29px;
     color: #283645;
-    margin-top: 42px;
+    margin-top: 40px;
   }
 
   &__phone,
@@ -49,6 +49,28 @@
     align-items: center;
     margin-bottom: 10px;
   }
+
+  &__map {
+    width: 100%;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 410px;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    border: 160px solid transparent;
+    border-top: 33px solid white;
+    //background-color: red;
+    //background-image: url("../img/triangle.png");
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -60,6 +82,14 @@
   .contacts__email-post,
   .contacts__text-adress {
     margin-bottom: 0;
+  }
+
+  .contacts__email-post {
+    margin-top: 17px;
+  }
+
+  .contacts__text-adress {
+    margin-top: 19px;
   }
 
   .contacts__info-post {
@@ -91,7 +121,7 @@
   .contacts__phone-number,
   .contacts__email-post,
   .contacts__text-adress {
-    margin-bottom: 0;
+    margin-bottom: 3px;
     margin-top: 0;
   }
 
@@ -101,7 +131,7 @@
   }
 
   .contacts__info-adress {
-    margin-top: 45px;
+    margin-top: 42px;
     grid-area: adress;
   }
 
@@ -124,6 +154,20 @@
 
   .contacts__map {
     height: 374px;
+  }
+
+  .contacts__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 402px;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    border: 330px solid transparent;
+    border-top: 75px solid white;
+    //background-color: red;
+    //background-image: url("../img/triangle.png");
+    box-sizing: border-box;
   }
 }
 
@@ -171,7 +215,7 @@
     font-size: 50px;
     font-weight: 300;
     line-height: 68px;
-    margin-top: 60px;
+    margin-top: 45px;
     margin-bottom: 0;
   }
 
@@ -179,5 +223,31 @@
   .contacts__email-post,
   .contacts__text-adress {
     margin-bottom: 20px;
+  }
+
+  .contacts__phone-number {
+    padding-right: 7px;
+  }
+
+  .contacts__text-adress {
+    padding-left: 7px;
+  }
+
+  .contacts__text {
+    padding-left: 7px;
+  }
+
+  .contacts__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 370px;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    border: 480px solid transparent;
+    border-top: 85px solid white;
+    //background-color: red;
+    //background-image: url("../img/triangle.png");
+    box-sizing: border-box;
   }
 }

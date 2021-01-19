@@ -28,22 +28,32 @@
 
 @font-face {
   font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
   src:
     url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Open Sans";
-  font-weight: bold;
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
   src:
     url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 .page {
@@ -56,12 +66,22 @@ body {
   margin: 0;
 }
 
+.page__body-bg-position {
+  background-position: 50% 260px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 50% 255px;
+  }
+}
+
 .page__body {
-  min-height: 100%;
+  //min-height: 100%;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-size: contain;
+  //background-size: contain;
+  //background-position: 50% 260px;
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
@@ -76,7 +96,6 @@ body {
   }
 
   @media (min-width: @desktop-width) {
-    //height: 853px;
     background-image: url("../img/back-desktop.jpg");
     background-position: 50% 0;
     background-size: auto;
@@ -101,8 +120,6 @@ body {
 }
 
 .button {
-  //width: 276px;
-  //height: 59px;
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 1px;
@@ -135,7 +152,6 @@ body {
   text-align: center;
   padding: 0;
   margin-top: 8px;
-  /*  margin-bottom: 60px;*/
 }
 
 .slider__toggle {
@@ -200,8 +216,6 @@ body {
   .site-list {
     display: flex;
     flex-direction: row;
-    //padding-left: 50px;
-    //padding-right: 50px;
     padding: 0;
     margin: 0;
   }
