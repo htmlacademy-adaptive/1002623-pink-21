@@ -5,6 +5,18 @@
     justify-content: center;
   }
 
+  .form__fieldsets .platform {
+    margin-bottom: 50px;
+  }
+
+  .form__fieldsets .filter-text {
+    margin-bottom: 65px;
+  }
+
+  .form__fieldsets .input-contacts {
+    margin-bottom: 60px;
+  }
+
   .allname {
     order: 1;
   }
@@ -35,11 +47,34 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    background-color: #ffffff;
+  }
+
+  .form__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
   .form__fieldsets {
     margin-top: 75px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .form__fieldsets .platform {
+    margin-bottom: 55px;
+  }
+
+  .form__fieldsets .input-contacts {
+    margin-bottom: 57px;
+  }
+
+  .form__fieldsets .travel {
+    margin-bottom: 52px;
   }
 }
