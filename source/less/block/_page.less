@@ -1,0 +1,136 @@
+.page {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.page__main-nav--close {
+  display: none;
+  width: 50px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: none;
+}
+
+.page__main-nav--close::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.page__main-nav--close:hover::before {
+  background-color: fade(#d22856, 100%);
+  box-shadow:
+    0 10px 0 0 fade(#d22856, 100%),
+    0 20px 0 0 fade(#d22856, 100%);
+}
+
+.page__main-nav--close:active::before {
+  background-color: fade(#d22856, 30%);
+  box-shadow:
+    0 10px 0 0 fade(#d22856, 30%),
+    0 20px 0 0 fade(#d22856, 30%);
+}
+
+.page__main-nav--opened {
+  width: 23px;
+  height: 23px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    right: 20px;
+    width: 29px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(#d22856, 100%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#d22856, 30%);
+  }
+}
+
+.page__body-bg-position {
+  background-position: 50% 260px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 50% 255px;
+  }
+}
+
+.page__body {
+  //min-height: 100%;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  background-position: 50% 260px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+    background-position: 50% 0;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page__main-nav--opened {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 53px;
+      right: 17px;
+      width: 29px;
+      height: 3px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__body {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
