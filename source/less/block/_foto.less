@@ -1,9 +1,11 @@
 .foto {
   background-color: #ffffff;
-  padding-top: 50px;
+  padding-top: 48px;
+  position: relative;
 
   &__wrapper {
     padding: 0 20px;
+    margin-top: 137px;
   }
 
   &__labal {
@@ -85,23 +87,29 @@
   }
 
   &__panorama {
-    width: 100vw;
     height: 137px;
     //margin-bottom: 25px;
     margin: 0 auto;
-    margin-left: -20px;
-    margin-right: -20px;
+    //margin-left: -20px;
+    //margin-right: -20px;
+    position: absolute;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &__post:first-of-type {
     position: relative;
+    padding-top: 6px;
   }
 
   &__post:first-of-type::before {
     content: "Панорама дня";
     color: #ffffff;
     position: absolute;
-    top: 0;
+    top: -137px;
     //left: 140px;
     right: 0;
     width: 140px;
@@ -125,8 +133,10 @@
 
 @media (min-width: @tablet-width) {
   .foto {
+    padding-top: 78px;
+
     &__wrapper {
-      margin-top: 27px;
+      margin-top: 510px;
       display: flex;
       flex-wrap: wrap;
       //justify-content: flex-start;
@@ -147,7 +157,7 @@
     }
 
     &__post:first-of-type::before {
-      top: 57px;
+      top: -453px;
       //left: 140px;
       right: 0;
     }
@@ -196,6 +206,7 @@
 
     &__post:first-child {
       padding-bottom: 18px;
+      padding-top: 4px;
     }
 
     &__message {
@@ -253,6 +264,7 @@
       order: 3;
       margin-top: 0;
       padding-right: 30px;
+      padding-top: 5px;
     }
   }
 }
@@ -261,16 +273,19 @@
   .foto {
     margin: 0 auto;
     padding-top: 90px;
+    position: relative;
+
 
     &__wrapper {
       width: 960px;
       margin: 0 auto;
+      margin-top: 506px;
       padding: 0 10px;
       box-sizing: border-box;
     }
 
     &__post:first-of-type::before {
-      top: 54px;
+      top: -452px;
     }
 
     &__post {
@@ -285,10 +300,11 @@
 
     &__panorama {
       margin: 0 auto;
-      width: 100vw;
       height: 506px;
       //margin-bottom: 25px;
       margin-left: -10px;
+      position: absolute;
+      width: 100vw;
     }
 
     /*&__hart-count {
@@ -387,6 +403,7 @@
 
     &__post:first-child {
       padding-bottom: 17px;
+      padding-top: 5px;
     }
   }
 }

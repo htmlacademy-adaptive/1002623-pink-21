@@ -17,12 +17,12 @@
             <img src="img/logotype-mobile.svg" alt="Пинк">
           </picture>
         </a>
-        <button class="page__main-nav page__main-nav--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <!--<button class="page__main-nav page__main-nav--close" type="button"><span class="visually-hidden">Открыть меню</span></button>-->
       </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a class="main-nav-link"  href="index.html">
                 Главная
               </a>
@@ -32,7 +32,7 @@
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item  site-list__item--active">
+            <li class="site-list__item site-list__item--active">
               <a class="main-nav-link" href="form.html">
                 Конкурс
               </a>
@@ -42,9 +42,7 @@
                 HTML Academy
               </a>
             </li>
-
           </ul>
-
         </div>
       </nav>
       </div>
@@ -171,8 +169,11 @@
         <div class="form-footer">
           <div class="form-footer__wrapper">
         <button class="button form-footer__button" type="submit">Отправить форму</button>
-        <p class="form-footer__required-text"><span class="form-footer__required-star">*</span> — обязательные для заполнения поля</p>
-      </div>
+        <p class="form-footer__required-text">
+          <span class="form-footer__required-star">*</span> — обязательные <span class="form-footer__required-text-desktop">для заполнения</span> поля</p>
+        <p class="form-footer__required-text-desktop">
+          <span class="form-footer__required-star">*</span> — обязательные для заполнения поля</p>
+        </div>
         </div>
         </form>
       </div>
@@ -225,6 +226,6 @@
   <button class="button modal__button">Закрыть окно</button>
 </div>
 </section>
-<script src="js/script.min.js"></script>
-  </body>
+<!--<script src="js/script.min.js"></script>-->
+</body>
 </html>

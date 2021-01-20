@@ -1,7 +1,9 @@
 .advantages {
   text-align: center;
+  background-color: #ffffff;
 
   &__wrapper {
+    //background-color: #ffffff;
     background-image: url("../img/grey.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,6 +81,7 @@
 @media (min-width: @tablet-width) {
   .advantages {
     &__wrapper {
+      background-color: #ffffff;
       background-image: url("../img/grey-tablet.png");
       background-repeat: no-repeat;
       background-size: cover;
@@ -156,17 +159,22 @@
   .advantages {
     text-align: center;
     height: 550px;
-    margin-bottom: 200px;
-  }
-
-  .advantages__wrapper {
-    width: 960px;
-    margin: 0 auto;
-    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 308px;
+    //background-color: #ffffff;
     background-image: url("../img/grey-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 265px;
+    background-position: 0 270px;
+  }
+
+  .advantages__wrapper {
+
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background: none;
+    background-image: none;
   }
 
   .advantages__slogan {
@@ -176,6 +184,7 @@
     line-height: 68px;
     padding-bottom: 60px;
     margin-bottom: 0;
+    background: none;
   }
 
   .advantages__description {
