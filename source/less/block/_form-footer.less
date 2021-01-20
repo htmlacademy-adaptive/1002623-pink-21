@@ -36,11 +36,16 @@
   &__required-star {
     color: #d22856;
   }
+
+  &__required-text-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .form-footer {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
+    order: 10;
   }
 
   .form-footer__wrapper {
@@ -75,5 +80,13 @@
     justify-content: space-between;
     align-items: space-between;
     box-sizing: border-box;
+  }
+
+  .form-footer__required-text {
+    display: none;
+  }
+
+  .form-footer__required-text-desktop {
+    display: block;
   }
 }
