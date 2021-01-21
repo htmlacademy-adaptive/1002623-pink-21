@@ -5,10 +5,6 @@
   background: #f2f2f2;
   border: none;
 
-  & ul.site-list {
-    margin-top: 0;
-  }
-
   &__wrapper {
     padding: 0 20px;
     //  padding-top: 10px;
@@ -84,10 +80,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  /*.form__fieldsets .travel {
-    margin-bottom: 55px;
-  }*/
-
   .travel {
     background: none;
     border: 2px solid #e5e5e5;
@@ -113,10 +105,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  /*.form__fieldsets .travel {
-    margin-bottom: 52px;
-  }*/
-
   .travel {
     width: 960px;
     height: 235px;
@@ -137,22 +125,14 @@
     &__legend {
       margin-bottom: 8px;
     }
-  }
 
-  .travel ul.site-list {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    flex-wrap: wrap;
-    margin-top: 1px;
-    //width: 100%;
-    /* display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 80px 80px;
-    justify-content: space-between;
-    justify-items: space-between;*/
-    //padding: 0 60px;
-    // padding-left: 87px;
+    &__column {
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      flex-wrap: wrap;
+      margin-top: 1px;
+    }
   }
 
   .travel__option:nth-child(1) {
