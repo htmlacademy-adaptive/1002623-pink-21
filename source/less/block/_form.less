@@ -1,0 +1,31 @@
+@media (min-width: @tablet-width) {
+  .form {
+    &__fieldsets {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    background-color: #ffffff;
+
+    .form__wrapper {
+      width: 960px;
+      margin: 0 auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .form__fieldsets {
+      margin-top: 75px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
